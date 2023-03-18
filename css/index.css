@@ -1,0 +1,15 @@
+
+h1 {
+    font-size: 35px;
+    margin: 10px ;
+}
+
+.descricao {
+    padding: 10px 150px;
+    text-align: justify;
+}
+
+.paragrafo {
+    text-indent: 2em;
+    font-size: 20px;
+}

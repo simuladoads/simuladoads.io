@@ -1,31 +1,54 @@
 
-
-h1 {
-    font-size: 35px;
-    margin: 10px;
+.titulo, .sub-titulo {
     text-align: center;
+    margin-top: 9px;
 }
 
-.descricao {
-    padding: 10px 150px;
+hr {
+    margin: 35px;
+    border: 1px #2c5ca8 solid;
 }
 
-.paragrafo {
+.questao{
+    padding: 5px 100px;
+}
+
+.texto-apoio {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.texto-apoio + p {
     text-align: justify;
     text-indent: 2em;
+    padding: 15px 50px 20px 50px;
     line-height: 1.5em;
-    font-size: 19px;
 }
+
+.num-quest {
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+form {
+    margin: 5px 25px;
+}
+
+label{
+    line-height: 3em;
+}
+
+p, label { font-size: 19px; }
+
 
 .controle { 
     display: flex;
     justify-content: center; 
-    margin: 10px;
 }
 
 .controle a { margin: 10px;}
 
-.start {
+.but-voltar, .but-proximo {
     padding: 10px 15px;
     font-size: 20px;
     border: 1px #2c5ca8 solid;
@@ -38,10 +61,4 @@ h1 {
 a > button:hover {
     background-color: #6491da;
     box-shadow: 4px 4px 5px #9b9b9bb8;
-}
-
-
-#creditos {
-    
-    margin-top: 30px;
 }

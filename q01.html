@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Links-->
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"> <!--tag usada para colocar o ícone da página-->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <!--tag usada para colocar o ícone da página-->
     <link rel="stylesheet" href="./css/principal.css"> <!--tag usada para vincular o css-->
-    <link rel="stylesheet" href="./css/quest.css"> <!--tag usada para vincular o css-->
-    <script src="" type=""></script> <!--tag script é usada para incluir ou referenciar um script executável, para usar o javascript dentro do html-->
+    <link rel="stylesheet" href="teste.css"> <!--tag usada para vincular o css-->
+    <script src="./js/script.js" type="module"></script> <!--tag script é usada para incluir ou referenciar um script executável, para usar o javascript dentro do html-->
 
 
     <title>Simulado PARANACIDADE</title> <!--tag usada para o titulo da pagina-->
@@ -29,60 +30,24 @@
         </nav>
     </header>
 
-
-    <main>
-        <h1 class="titulo"> SIMULADO CERTAME SELETIVO PÚBLICO </h1>
-        <h2 class="sub-titulo"> Analista de Desenvolvimento de Sistemas</h2>
-
-         <hr>
-         
-        <div class="questao">
-            <h2 class="texto-apoio">Considere o trecho a seguir, extraído de um dos escritos de Lima Barreto, para responder as próximas questões.</h2>
-            <p>
-                “A vida não pode ser uma dor, uma humilhação de contínuos e burocratas idiotas; a vida deve ser uma vitória. Quando, 
-                porém, não se pode conseguir isto, a morte é que deve vir em nosso socorro. A covardia mental e moral do Brasil não 
-                permite movimentos de independência; ela só quer acompanhadores de proscissão, que só visam lucros ou salários nos 
-                pareceres. Não há, entre nós, campo para as grandes batalhas de espírito e inteligência. Tudo aqui é feito com o dinheiro
-                e os títulos. A agitação de uma ideia não repercute na massa e, quando esta sabe que se trata de contrariar uma pessoa 
-                poderosa, trata o agitador de louco. Nunca foram os homens de bom senso, os honestos burgueses ali da esquina, que 
-                fizeram as grandes reformas no mundo. Todas elas têm sido feitas por homens, e às vezes mesmo mulheres, tidos por doidos. 
-                A divisa deles consiste em não seguir a opinião de todos, por isso mesmo podem ver mais longe do que os outros. Se nós 
-                tivéssemos sempre a opinião da maioria, não teríamos ainda saído das cavernas. O que é preciso, portanto, é que cada qual 
-                respeite a opinião de qualquer, para que desse choque surja o esclarecimento do nosso destino, para própria felicidade da 
-                espécie humana. Entretanto, no Brasil, não se quer isto. Procura-se abafar as opiniões, para só deixar em campo os desejos 
-                dos poderosos e prepotentes. Os órgãos de publicidade por onde se podiam elas revelar são fechados e não aceitam nada que 
-                os possa lesar. Dessa forma, quem, como eu, nasceu pobre e não quer ceder uma linha da sua independência de espírito e
-                inteligência, só tem que fazer elogios à morte”. (Elogio da morte, com adaptações).
-            </p>
-            <br>
-
-            <h2 class="num-quest">Questão 1</h2>
-            <p>Em relação à interpretação geral desse trecho, pode-se afirmar que o autor: </p>
-            <form action="#" method="get" target="_blank" autocomplete="off">
-
-                <input type="radio" id="a" name="test" value="A">
-                <label for="a"> a) acredita no poder da maioria, e não no do indivíduo, para melhorar o mundo. </label>
-                <br>
-
-                <input type="radio" id="b" name="test" value="B">
-                <label for="b"> b) considera-se privilegiado, por ter nascido, como se diz, em “berço de ouro”.</label>
-                <br>
-
-                <input type="radio" id="c" name="test" value="C">
-                <label for="c"> c) se vê obrigado a elogiar a morte, dadas as misérias da sua vida. </label>
-                <br>
-
-                <input type="radio" id="d" name="test" value="D">
-                <label for="d"> d) tece elogias à vida cultural brasileira, não obstante suas peculiaridades </label>
-                
-            </form>
-            <br>
-            <div class="controle">
-                <a href="index.html" ><button type="button" class="but-voltar">Voltar</button></a>
-                <a href="q02.html" ><button type="button" class="but-proximo">Próxima Questão</button></a>
-            </div>
+  <main>
+    <div class="content">
+        <span class="spnQtd"></span>
+        <h2 class="texto-apoio"></h2>
+        <p class="texto"></p>
+        <br>
+        <h2 class="num-quest"></h2>
+        <span class="question"></span>
+        <div class="answers">
+            
         </div>
-    </main>
+        <button class="proximo">próxima</button>
+    </div>
+    <div class="finish">
+      <span></span>
+      <button>Reiniciar</button>
+    </div>
+  </main>
 
     <footer>
         <a href="https://www.vestibularfatec.com.br/unidades-cursos/curso.asp?c=194" class="logoads" target="_blank">

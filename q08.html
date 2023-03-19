@@ -10,8 +10,8 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <!--tag usada para colocar o ícone da página-->
     <link rel="stylesheet" href="./css/principal.css"> <!--tag usada para vincular o css-->
-    <script src="" type=""></script>
-    <!--tag script é usada para incluir ou referenciar um script executável, para usar o javascript dentro do html-->
+    <link rel="stylesheet" href="teste.css"> <!--tag usada para vincular o css-->
+    <script src="./js/script.js" type="module"></script> <!--tag script é usada para incluir ou referenciar um script executável, para usar o javascript dentro do html-->
 
 
     <title>Simulado PARANACIDADE</title> <!--tag usada para o titulo da pagina-->
@@ -30,65 +30,24 @@
         </nav>
     </header>
 
-
-
-    <main>
-
-        <div>
-            <h1 class="texto-apoio">Leia o texto para responder da questão 1 a 10</h1>
-            <p>
-                    
-            </p>
-            <br>
-
-            <h2 class="num-quest">Questão 8</h2>
-            <p> Em relação à fonética, marque a alternativa que indica apenas proparoxítonas que aparecem no texto: </p>
-            <br>
-            <form action="#" method="get" target="_blank" autocomplete="off">
-
-                <input type="radio" id="a" name="test" value="A">
-                <label for="a"> a) a covardia mental e moral do Brasil.</label>
-                <br>
-
-                <input type="radio" id="b" name="test" value="B">
-                <label for="b"> b) a humilhação de contínuos e burocratas idiotas.</label>
-                <br>
-
-                <input type="radio" id="c" name="test" value="C">
-                <label for="c"> c) a ideia de que a vida deve ser uma vitória.</label>
-                <br>
-
-                <input type="radio" id="d" name="test" value="D">
-                <label for="d"> d) os lucros ou salários nos pareceres.</label>
-                
-            </form>
-            <br>
-            <div>
-                <a href="q01.html"><button type="button">Voltar</button></a>
-                <a href="q08.html"><button type="button">Proxima Questão</button></a>
-            </div>
-            <h1 class="heading">Questão 8</h1>
-            <p>Em relação à fonética, marque a alternativa que
-                indica apenas proparoxítonas que aparecem no texto.</p>
-            <form action="#" method="get" target="_blank" autocomplete="off">
-                <input type="radio" id="test" name="test" value="A">
-                <label for="test"> a) Anteontem, canteirinho, lavrador </label><br>
-
-                <input type="radio" id="test" name="test" value="B">
-                <label for="test"> b) Esplêndido, número, ímpeto.<br>
-
-                    <input type="radio" id="test" name="test" value="C">
-                    <label for="test"> c) Ignorante, máquina, surrealistas </label><br>
-
-                    <input type="radio" id="test" name="test" value="D">
-                    <label for="test"> d) Medíocre, americanos, emocionante. </label><br>
-
-                    <br><a href="q09.html"><button type="button">Proxima Questão</button></a>
-                    <a href="q02.html"><button type="button">Voltar</button></a>
-                </label>
-            </form>
-    </main>
-
+  <main>
+    <div class="content">
+        <span class="spnQtd"></span>
+        <h2 class="texto-apoio"></h2>
+        <p class="texto"></p>
+        <br>
+        <h2 class="num-quest"></h2>
+        <span class="question"></span>
+        <div class="answers">
+            
+        </div>
+        <button class="proximo">próxima</button>
+    </div>
+    <div class="finish">
+      <span></span>
+      <button>Reiniciar</button>
+    </div>
+  </main>
 
     <footer>
         <a href="https://www.vestibularfatec.com.br/unidades-cursos/curso.asp?c=194" class="logoads" target="_blank">

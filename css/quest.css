@@ -48,7 +48,7 @@ p, label { font-size: 19px; }
 
 .controle a { margin: 10px;}
 
-.but-voltar, .but-proximo {
+input {
     padding: 10px 15px;
     font-size: 20px;
     border: 1px #2c5ca8 solid;
@@ -58,7 +58,7 @@ p, label { font-size: 19px; }
     
 }
 
-a > button:hover {
+input:hover {
     background-color: #6491da;
     box-shadow: 4px 4px 5px #9b9b9bb8;
 }

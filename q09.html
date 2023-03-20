@@ -1,89 +1,95 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+  </head>
+  <body>
 
-    <!--Links-->
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <!--tag usada para colocar o ícone da página-->
-    <link rel="stylesheet" href="./css/principal.css"> <!--tag usada para vincular o css-->
-    <script src="" type=""></script>
-    <!--tag script é usada para incluir ou referenciar um script executável, para usar o javascript dentro do html-->
-
-
-    <title>Simulado PARANACIDADE</title> <!--tag usada para o titulo da pagina-->
-
-</head>
-
-<body>
-    <header>
-        <nav class="navbar">
-            <a href="#default" class="logo">Simulado ADS</a>
-            <div class="navbar-canto">
-                <a href="index.html">SOBRE</a>
-                <a class="active" href="questoes.html">INICIAR SIMULADO</a>
-                <a href="#creditos">CRÉDITOS</a>
-            </div>
-        </nav>
-    </header>
-
-
-    <main>
-
-        <div>
-            <h1 class="texto-apoio">Leia o texto para responder da questão 1 a 10</h1>
-            <p>er elogios à morte”. (Elogio da morte, com adaptações).
-            </p>
-            <br>
-
-        <div>
-            <h1 class="heading">Questão 9</h1>
-            <p>
-                No trecho “Sou um ignorante, um pobre homem de cidade. Mas eu tinha razão”, a conjunção “mas” pode ser
-                classificada como:
-
-                jhgf
-            </p>
-            <form action="#" method="get" target="_blank" autocomplete="off">
-                <input type="radio" id="test" name="test" value="A">
-                <label for="test"> a) aditiva. </label><br>
-
-                <input type="radio" id="test" name="test" value="B">
-                <label for="test"> b) alternativa.</label><br>
-
-                <input type="radio" id="test" name="test" value="C">
-                <label for="test"> c) adversativa.</label><br>
-
-                <input type="radio" id="test" name="test" value="D">
-                <label for="test"> d) explicativa. </label><br>
-            </form>
-        </div>
-    </main>
-
-
-    <footer>
-        <a href="https://www.vestibularfatec.com.br/unidades-cursos/curso.asp?c=194" class="logoads" target="_blank">
-            <img 
-                class="img-rodape"
-                src="./img/ads-logo.png"
-                alt="ADS, Analise e Desenvolvimento de Sistemas">
-        </a>
-        <a href="https://www.cps.sp.gov.br/" class="logocps" target="_blank">
-            <img
-                class="img-rodape2"
-                src="./img/cps-logo.png"
-                alt="Centro Paula Souza">
-        </a>
-        <a href="https://www.vestibularfatec.com.br/home/" class="logofatec" target="_blank">
-            <img 
-                class="img-rodape"
-                src="./img/fatec-carapicuiba-logo.png"
-                alt="FATEC Carapicuiba">
-        </a>
-    </footer>
-</body>
-
-</html>
+    <h1>Quiz</h1>
+    <form id="quizForm"></form>
+      <h2>Questão 1</h2>
+      <p>Qual é a capital do Brasil?</p>
+      <label>
+        <input type="radio" name="q1" value="a">
+        A) São Paulo
+      </label><br>
+      <label>
+        <input type="radio" name="q1" value="b">
+        B) Brasília
+      </label><br>
+      <label>
+        <input type="radio" name="q1" value="c">
+        C) Rio de Janeiro
+      </label><br>
+      <label>
+        <input type="radio" name="q1" value="d">
+        D) Salvador
+      </label><br><br>
+      
+      <h2>Questão 2</h2>
+      <p>Qual é o maior planeta do sistema solar?</p>
+      <label>
+        <input type="radio" name="q2" value="a">
+        A) Marte
+      </label><br>
+      <label>
+        <input type="radio" name="q2" value="b">
+        B) Júpiter
+      </label><br>
+      <label>
+        <input type="radio" name="q2" value="c">
+        C) Saturno
+      </label><br>
+      <label>
+        <input type="radio" name="q2" value="d">
+        D) Netuno
+      </label><br><br>
+      
+      <h2>Questão 3</h2>
+      <p>Quem escreveu a obra "O Pequeno Príncipe"?</p>
+      <label>
+        <input type="radio" name="q3" value="a">
+        A) Antoine de Saint-Exupéry
+      </label><br>
+      <label>
+        <input type="radio" name="q3" value="b">
+        B) Victor Hugo
+      </label><br>
+      <label>
+        <input type="radio" name="q3" value="c">
+        C) Marcel Proust
+      </label><br>
+      <label>
+        <input type="radio" name="q3" value="d">
+        D) Albert Camus
+      </label><br><br>
+      
+      <input type="button" value="Enviar" onclick="verificarRespostas()">
+    </form>
+    
+    <script>
+      function verificarRespostas() {
+        let acertos = 0; // Aqui estou declarando uma variável de valor 0. pq? PQ EU QUIS PORRA
+        
+        // Questão 1
+        const resposta1 = document.querySelector('input[name="q1"]:checked').value;
+        if (resposta1 === "b") {  // TA VENDO ESSA MERDA AQ? ISSO AQ É UMA ESTRUTURA CONDICIONAL
+          acertos++; // E essa porra é um contador, é bem importante (e me salva muito), dê um olá ao contador! Ele com certeza te salvará depois.
+        }
+        
+        // Questão 2
+        const resposta2 = document.querySelector('input[name="q2"]:checked').value;
+        if (resposta2 === "b") {
+          acertos++;
+        }
+        
+        // Questão 3
+        const resposta3 = document.querySelector('input[name="q3"]:checked').value;
+        if (resposta3 === "a") {
+          acertos++;
+        }
+        
+        alert(`Você acertou ${acertos} questões.`); //Retorno para o usuário.      
+      }
+    </script>

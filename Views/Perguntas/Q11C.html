@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html Lang = "PT-BR">
+	
+	<head>
+		<Meta CharSet = "UTF-8"/>
+		<Meta Name = "Author" Content = "Raul Mascarenhas"/>
+		<Meta Name = "ViewPort" Content = "width=device-width, initial-scale=1.0"/>
+		<Title>Questão 11 - SimuNade</Title>
+		<Link Rel = "Icon" Href = "http://enade.inep.gov.br/enade/favicon.ico"/>
+        <Link Rel = "StyleSheet" Type = "Text/Css" Href = "../../css/layout.css"/>
+        <Link Rel = "StyleSheet" Type = "Text/Css" Href = "../../css/perguntas.css"/>
+		<Link rel="StyleSheet" type="Text/Css" Href = "../../css/popup.css"/>
+		<Link rel="StyleSheet" type="Text/Css" Href = "../../css/popup-correcao.css"/>
+		<Link Rel = "StyleSheet" Type = "Text/Css" Href = "../../css/responsive.css" Media = "screen and (max-width: 1440px)"/>
+	</head>
+
+	<body Id = "Q11">
+		<Header>
+            <Div Class = "container">
+              <Div Class = "inep_enade">
+                <Div Class = "logo_inep">
+                  <a Target = "_Blank" Href = "https://www.gov.br/inep/pt-br">    
+                    <Img Src = "../../Images/Principal/ofc_logo_inep.svg" Alt = "INEP"/>
+                  </a>
+                </Div>
+                <Span Class = "logo_enade">
+                  <b>
+                    Enade
+                  </b>
+                </Span>
+              </Div>
+              <Div Class = "menu-section">
+                <Div Class = "menu-toggle">
+                  <Div Class = "one"></Div>
+                  <Div Class = "two"></Div>
+                  <Div Class = "three"></Div>
+                </Div>
+                <Nav>
+                  <Ul>
+                    <Li>
+                      <a Href="../../Views/Principal/Index.html">Início</a>
+                    </Li>
+                    <Li>
+                      <a Href="../../Views/Principal/Credits.html">Créditos</a>
+                    </Li>
+                    <Li>
+                      <a Href="../../Views/Principal/About.html">Sobre</a>
+                    </Li>
+                  </Ul>
+                </Nav>
+              </Div>
+            </Div>
+        </Header>
+
+		<Main> 
+			<Div Class = "pagina-pergunta">
+				<div class = "numero-pergunta">
+					<b>
+						<a Target = "_Blank" Href = "https://download.inep.gov.br/enade/provas_e_gabaritos/2021_PV_tecnologia_analise_desenvolvimento_sistemas.pdf">
+							Simulado Análise e Desenvolvimento de Sistemas - Enade 2021 - Questão 11/35
+						</a> 
+					</b>
+				</div>
+
+				<div class = "corpo-pergunta">
+
+					<Div Class = "nav-pergunta">
+						<a Href = "Q9AC_EQ8.html"><</a>
+						<a Href = "Q10AD_EQ8.html">10</a>
+						<a Class = "pergunta-selecionada" Href = "#">11</a>
+						<a Href = "Q12AC_EQ8.html">12</a>
+						<a Href = "Q13AC_EQ8.html">></a>
+					</Div>
+
+					<div class = "texto-pergunta">
+						<p>
+							O código Java, a seguir, contém a implementação de uma Pilha utilizando a estratégia encadeada.<br><br>
+						</p>
+
+						<p>
+							<font face="Courier New">
+								<b>public class</b> No{<br>
+								&nbsp;&nbsp;&nbsp;<b>public int</b> dado<b>;</b><br>
+								&nbsp;&nbsp;&nbsp;<b>public</b> No prox<b>;</b><br>
+								&nbsp;&nbsp;&nbsp;<b>public</b> No(<b>int</b> dado){<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>this.</b>dado = dado<b>;</b><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+								}<br>
+								<b>public class</b> PilhaEncadeada{<br>
+								&nbsp;&nbsp;&nbsp;<b>private</b> No topo<b>;</b><br>
+								&nbsp;&nbsp;&nbsp;<b>public int</b> pop(){<br>
+								&nbsp;&nbsp;&nbsp;<b>if</b> (topo == <b>null</b>)<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>return</b> -1<b>;</b><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No lixo = topo<b>;</b><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;topo = topo.prox<b>;</b><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lixo.prox = <b>null;</b><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>return</b> lixo.dado<b>;</b><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+								&nbsp;&nbsp;&nbsp;<b>public int</b> top(){<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>if</b> (topo == <b>null</b>)<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>return</b> -1<b>;</b><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>return</b> (topo.dado)<b>;</b><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+								}<br><br>
+							</font>
+						</p>
+					</div>
+
+					<div class="enunciado-pergunta">
+						<p>
+							Com base no exposto, assinale a opção que possui a implementação correta do método push para essa Pilha.
+						</p>
+					</div>
+
+					<div class = "alternativas-pergunta">
+						<span><Input Type = "Radio" Name = "Q11" Value = "A"/> A) <Img Class = "imagem-alternativa" Src = "../../Images/Perguntas/Alternativas/Q11_alt_A.png"/> </span>
+						<span><Input Type = "Radio" Name = "Q11" Value = "B"/> B) <Img Class = "imagem-alternativa" Src = "../../Images/Perguntas/Alternativas/Q11_alt_B.png"/> </span>
+						<span><Input Type = "Radio" Name = "Q11" Value = "C"/> C) <Img Class = "imagem-alternativa" Src = "../../Images/Perguntas/Alternativas/Q11_alt_C.png"/> </span>
+						<span><Input Type = "Radio" Name = "Q11" Value = "D"/> D) <Img Class = "imagem-alternativa" Src = "../../Images/Perguntas/Alternativas/Q11_alt_D.png"/> </span>
+						<span><Input Type = "Radio" Name = "Q11" Value = "E" Id = "alt-correta"/> E) <Img Class = "imagem-alternativa" Src = "../../Images/Perguntas/Alternativas/Q11_alt_E.png"/> </span>
+					</div>
+
+					<Div Class = "buttons-nav">
+						<Input Type = "Button" Class = "button-nav" Value = "Finalizar" OnClick = "salvaResultadoSimulado()"/>
+						<Input Type = "Button" id="popup" Class = "button-nav" Value = "Menu" onclick="abrirPopUp()"/>
+						<Input Type = "Button" Class = "button-nav" Value = "Corrigir" OnClick = "confereResposta()"/>
+					</Div>
+
+				</div>
+			</Div>
+		</Main>
+
+		<Footer>
+			<Div>
+			  <p>
+				<a Target = "_Blank" Href = "http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/">
+				  Curso de Análise e Desenvolvimento de Sistemas (ADS)
+				</a>
+			  </p>
+		
+			  <Div Class = "fatec_sp_enade">
+				<a Target = "_Blank" Href = "http://www.fateccarapicuiba.edu.br">
+					<Img Src = "../../Images/Principal/fatec-carapicuiba-logo.png"/> 
+				</a>
+				<a Target = "_Blank" Href = "https://www.saopaulo.sp.gov.br/">
+					<Img Src = "../../Images/Principal/governo-do-estado-de-sp-logo.png" height="45px" width="80px"/> 
+				</a>
+				<a Target = "_Blank" Href = "https://www.cps.sp.gov.br/">
+					<Img Src = "../../Images/Principal/cps-logo.png" height="45px" width="80px"/> 
+				</a>
+			  </Div>
+			</Div>
+		</Footer>
+
+		<Script Src = "../../js/menu.js"></Script>
+		<Script Src = "../../js/contar.js"></Script>
+		<Script Src = "../../js/corrigir.js"></Script>
+		<script src="../../js/popup.js"></script>
+	</body>
+</html>

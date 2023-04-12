@@ -1,0 +1,201 @@
+/*
+  Imporando uma fonte do google para ser utilizada.
+*/
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
+/*
+  Definindo um estilo para todos os elementos da pag
+  pois o "*" trata-se de um seletor universal.
+*/
+
+* {
+  box-sizing: border-box; 
+  margin: 0; /* Definindo uma margem geral. */
+  padding: 0; /* Definindo um padding geral. */
+  outline: 0; /* Contorno da linha. */
+}
+
+/*
+  Estilizando o html e o body
+*/
+
+html, body {
+  height: 100vh; /* Definindo um tamanho utilizando a unidade ViewHeight => que 1 unidade representa 1% do ViewPort (Área total visível). */
+  font-family: "Source Sans Pro"; /* Definindo a fonte que irá ser utilizada */
+  text-rendering: optimizelegibility; /* O text-rendering trata-se de um atributo sobre o que otimizar enquanto renderiza o texto. */
+  -webkit-font-smoothing: antialiased;
+}
+
+html{
+  font-size: 62.5%; /* A cada 1rem será considerado 10px (65.5/100*16px = 10px) */
+}
+
+body{
+  font-size: 1.6rem; /* Definindo o tamanho da fonte do corpo do site, no caso a medida é dada por (65.5/100*16) * 1.6 */
+}
+
+header {
+  background-color: #2c5ca8; /* Definindo uma cor de fundo para o header. */
+}
+
+header nav ul {
+  display: flex; /* Definindo como os elementos serão dispostos na página. */
+}
+
+header nav ul li {
+  list-style: none; /* Definindo o estilo da lista. */
+}
+
+header nav ul li a {
+  text-decoration: none; /* Definindo uma decoração de texto, sendo o mesmo com diferentes tipos de linhas. */
+  color: white; /* Definindo uma cor para a palavra. */
+  text-transform: capitalize; /* Definindo a capitalização das palavras (maiuscula, minuscuça etc). */
+  font-size: 1.4rem; /* Definindo o tamanho da fonte. */
+  padding: 24px; /* Definindo uma distância das boras em relação ao conteúdo. */
+  transition: all 250ms linear 0s; /* definindo a transição entre os elementos. */
+}
+
+header nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.267) /* Definindo uma cor quando o mouse for sobreposto ao elemento. */
+}
+
+h2 {
+  margin-top: 1%; /* Definindo uma margem em relação ao item acima. */
+  text-align: center; /* Definindo o alinhamento do texto. */
+  font-size: 3.6rem; /* Definindo o tamanho da fonte.*/
+  line-height: 3.2rem; /* Definindo o espaçamento entre as linhas do texto. */
+}
+
+h3 {
+  text-align: center; /* Definindo o alinhamento do texto. */
+  margin-top: 1%; /* Definindo uma margem em relação ao item acima. */
+  font-size: 2.8rem; /* Definindo o tamanho da fonte.*/
+  line-height: 3rem; /* Definindo o espaçamento entre as linhas do texto. */
+}
+
+header .container {
+  display: flex; /* Definindo como os elementos serão dispostos na página. */
+  align-items: center; /* Definindo o alinhamento dos itens */
+  justify-content: space-between; /* Definindo o alinhamento do conteudo no eixo principal. */
+  width: 90%; /*Tornando a largura 90% do valor máximo de largura pré-estabelecido.*/
+  max-width: 1400px; /*Definindo um tamanho máximo de div para não ser ultrapassada.*/
+  margin: auto; /* Definindo uma margem geral. */
+}
+
+.inep_enade{
+  display: flex; /* Definindo como os elementos serão dispostos na página. */
+  flex-direction: row; /* Definindo uma disposição de exibição */
+  justify-content: center; /* Definindo o alinhamento do conteudo no eixo principal. */
+  align-items: center; /* Definindo o alinhamento dos itens */
+}
+
+.logo_inep{
+  padding: 13px; /* definindo um padding geral. */
+  background-color:  #2c5ca8; /* Definindo uma cor de fundo */
+}
+
+.logo_enade{
+  margin-left: 0.5px; /* Definindo uma margem em relação a esquerda. */
+  align-items: center;/* Definindo o alinhamento dos itens */
+}
+
+.logo_enade b{
+  font-size: 2.5rem; /* Definindo o tamanho da fonte. */
+  color: #fff; /* Definindo uma cor */
+  letter-spacing: 1.5px; /* Espaçamento das letras. */
+  padding: 5px; /* definindo um padding geral. */
+}
+
+.button-nav {
+  display: inline-block; /* Definindo como os elementos serão dispostos na página. */
+  font-size: 1.3rem; /* Definindo o tamanho da fonte. */
+  font-weight: 580; /* definindo um 'peso'. */
+  color: rgb(255, 255, 255); /* Definindo uma cor */
+  background-color: #2c5ca8; /* Definindo uma cor de fundo */
+  margin: 15px 0px 0px; /* Definindo uma margem geral. */
+  border-color:  #2c5ca8; /* Definindo uma cor de borda. */
+  padding: 12px 30px; /* definindo um padding geral. */
+  text-decoration: none; /* Definindo um estilo para o link. */
+  border-radius: 5px; /* definindo o arredontamendo da borda. */
+  transition: all 150ms linear 0s; /* Definindo uma transição. */
+}
+
+.button-nav:hover{
+  font-size: 1.5rem; /* Definindo o tamanho da fonte quando o cursosr estiver sobre o componente.*/
+  font-weight: 700; /* Definindo o tamanho da fonte quando o cursosr estiver sobre o componente.*/
+}
+
+.corpo-pagina{
+ 
+  box-shadow: inset; /* Definindo um 'sombreamento'. */
+  margin-left: 6%; /* Definindo uma margem em relação a esquerda. */
+  margin-right: 6%; /* Definindo uma margem em relação a direita. */
+  margin-top: 1%; /* Definindo uma margem em relação ao item acima. */
+  margin-bottom: 1%;  /* Definindo uma distancia em relação ao item abaixo. */
+  padding-top: 40px; /* definindo um padding em relação ao topo. */
+  padding-bottom: 80px; /* definindo um padding em relação a parte de baixo. */
+  text-align: center; /* Definindo o alinhamento do texto. */
+}
+
+section.hero {
+  margin: 80px 0; /* Definindo uma margem geral. */
+}
+
+section.hero .container {
+    width: 90%; /* Tornando a largura 90% do valor máximo de largura pré-estabelecido. */
+    max-width: 1400px; /* Definindo um tamanho máximo de div para não ser ultrapassada.*/
+    margin: auto; /* Definindo uma margem geral. */
+    display: flex; /* Definindo como os elementos serão dispostos na página. */
+}
+
+section.hero p {
+  color: rgb(154, 142, 191); /* Definindo uma cor */
+  font-size: 1.8rem; /* Definindo o tamanho da fonte. */
+  line-height: 3.2rem; /* Definindo o espaçamento entre as linhas do texto. */
+  margin: 10px 0px 0px; /* Definindo uma margem geral. */
+}
+
+footer{
+  width: 100%; /*Tornando a largura 90% do valor máximo de largura pré-estabelecido.*/
+
+  background-color:   #6491da; /* Definindo uma cor de fundo */
+  padding: 80px 0; /* definindo um padding em relação ao topo. */
+  display:flex; /* Definindo como os elementos serão dispostos na página. */
+  justify-content: center; /* Definindo o alinhamento do conteudo no eixo principal. */
+  align-items: center; /* Definindo o alinhamento dos itens */
+
+  margin: 0; /* Definindo uma margem geral. */
+  height: 100%; /* Definindo a altura */
+  max-height: 100px; /* Definindo a altura máxima */
+  overflow: hidden; /* Definindo o que vai acontecer com as dimensões que excedem a pag. */
+}
+
+footer p {
+  margin-bottom: 15px;  /* Definindo uma distancia em relação ao item abaixo. */
+}
+
+.fatec_sp_enade{
+  display:flex; /* Definindo como os elementos serão dispostos na página. */
+  justify-content: center; /* Definindo o alinhamento do conteudo no eixo principal. */
+  align-items: center; /* Definindo o alinhamento dos itens */
+}
+
+.fatec_sp_enade a:hover{
+  padding: 0.2%; /* definindo um padding em relação ao topo. */
+  background: rgba(255, 255, 255, 0.164) /* Definindo uma cor quando o mouse for sobreposto ao elemento.*/
+}
+
+footer p a {
+  text-decoration: none; /* Definindo uma decoração de texto, sendo o mesmo com diferentes tipos de linhas.*/
+  color: white; /* Definindo uma cor para a palavra. */
+  font-size: 1.6rem; /* Definindo o tamanho da fonte. */
+  transition: all 250ms linear 0s; /* definindo a transição entre os elementos.*/
+}
+
+footer p a:hover {
+  background: rgba(255, 255, 255, 0.267) /* Definindo uma cor quando o mouse for sobreposto ao elemento.*/
+}
+
+input {
+  margin: 20px 8px 10px; /* Definindo uma margem geral. */
+}

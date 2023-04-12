@@ -44,6 +44,10 @@ header {
     color: rgb(0, 0, 0);
 } 
 .navbar-canto { float: right; }
+
+.navbar-canto a {
+    font-size: 16px;
+}
   
 
 footer {

@@ -98,6 +98,18 @@
     text-align: start; /* Definindo o alinhamento do texto. */
 }
 
+table, td, th {
+    border: 1.5px solid;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  table {
+    width: 80%;
+    margin: 0 10%;
+    border-collapse: collapse;
+  }
+
 .alternativas-pergunta{
     text-align: left; /* Definindo o alinhamento do texto. */
 }

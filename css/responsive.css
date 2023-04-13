@@ -334,11 +334,6 @@
 
 		.buttons-nav input{font-size: 1.7rem;}
 
-		.buttons-nav input:hover{
-			font-size: 1.9rem; /* Definindo o tamanho da fonte quando o cursor estiver sobre o componente.*/
-			font-weight: 700; /* Definindo o tamanho da fonte quando o cursor estiver sobre o componente.*/
-		}
-
 		header nav ul li a {font-size: 1.50rem;}
 
 		footer div p a{font-size: 2rem;}
@@ -808,11 +803,6 @@
 			font-weight: 500;
 		}
 
-		.button-nav:hover{
-			font-size: 1.4rem; /* Definindo o tamanho da fonte quando o cursor estiver sobre o componente.*/
-			font-weight: 600; /* Definindo o tamanho da fonte quando o cursor estiver sobre o componente.*/
-		}
-		
 		.nav-pergunta{
 			font-size: 2.2rem;
 			font-weight: 400;
@@ -921,11 +911,6 @@
 		.button-nav {
 			font-size: 0.85rem;
 			font-weight: 500;
-		}
-
-		.button-nav:hover{
-			font-size: 0.9rem; /* Definindo o tamanho da fonte quando o cursor estiver sobre o componente.*/
-			font-weight: 600; /* Definindo o tamanho da fonte quando o cursor estiver sobre o componente.*/
 		}
 		
 		.nav-pergunta {

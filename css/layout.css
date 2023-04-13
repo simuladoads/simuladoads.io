@@ -82,24 +82,24 @@ header .container {
   margin: auto; /* Definindo uma margem geral. */
 }
 
-.inep_enade{
+.logos{
   display: flex; /* Definindo como os elementos serão dispostos na página. */
   flex-direction: row; /* Definindo uma disposição de exibição */
   justify-content: center; /* Definindo o alinhamento do conteudo no eixo principal. */
   align-items: center; /* Definindo o alinhamento dos itens */
 }
 
-.logo_inep{
+.logo_pci{
   padding: 13px; /* definindo um padding geral. */
   background-color:  #2c5ca8; /* Definindo uma cor de fundo */
 }
 
-.logo_enade{
+.logo_parana{
   margin-left: 0.5px; /* Definindo uma margem em relação a esquerda. */
   align-items: center;/* Definindo o alinhamento dos itens */
 }
 
-.logo_enade b{
+.logo_parana b{
   font-size: 2.5rem; /* Definindo o tamanho da fonte. */
   color: #fff; /* Definindo uma cor */
   letter-spacing: 1.5px; /* Espaçamento das letras. */
@@ -121,8 +121,8 @@ header .container {
 }
 
 .button-nav:hover{
-  font-size: 1.5rem; /* Definindo o tamanho da fonte quando o cursosr estiver sobre o componente.*/
-  font-weight: 700; /* Definindo o tamanho da fonte quando o cursosr estiver sobre o componente.*/
+  background-color: #6491da;
+  border-color: #6491da;
 }
 
 .corpo-pagina{
@@ -174,14 +174,13 @@ footer p {
   margin-bottom: 15px;  /* Definindo uma distancia em relação ao item abaixo. */
 }
 
-.fatec_sp_enade{
+.fatec_sp{
   display:flex; /* Definindo como os elementos serão dispostos na página. */
   justify-content: center; /* Definindo o alinhamento do conteudo no eixo principal. */
   align-items: center; /* Definindo o alinhamento dos itens */
 }
 
-.fatec_sp_enade a:hover{
-  padding: 0.2%; /* definindo um padding em relação ao topo. */
+.fatec_sp a:hover{
   background: rgba(255, 255, 255, 0.164) /* Definindo uma cor quando o mouse for sobreposto ao elemento.*/
 }
 

@@ -1,16 +1,4 @@
 @media (min-width: 1024px) and (max-width: 1440px){ /*Uma media query consiste de um media type e pelo menos uma expressão que limita o escopo das folhas de estilo usando media features, tal como largura, altura e cor*/
-	
-	.info-enade{
-		width: 100%;  /*Determina a largura da area de conteudo de um elemento*/
-		height: auto; /*Determina a altura do conteudo de um elemento*/ 
-		display: block; /*Faz com que o elemento HTML seja renderizado como bloco*/
-		margin-left: auto; /*Define a area de margem do elemento a esquerda*/
-		margin-right: auto; /*Define a area de margem do elemento a direita*/
-	}
-		
-	.info-enade blockquote{
-		font-size: 1.6rem;/*É utilizado para indicar o tamanho da letra(fonte)*/
-	}
 		
 	.responsaveis-site{
 		font-size: 1.8rem;
@@ -24,65 +12,39 @@
 		margin-right: 1%;
 	}
 		
-	.fonte-video{
-		font-size: 1.35rem;
-	}
-		
 	.corpo-pagina {
 		margin-left: 2%;
 		margin-right: 2%;
 	}
 		
-	.sobre-o-enade{
+	.sobre{
 		font-size: 1.7rem;
 		margin-left: 1%;
 		margin-right: 1%;
 	}
 		
-	.fonte-sobre-o-enade{
-		font-size: 1.6rem;
-	}
+	.fonte-sobre{font-size: 1.6rem;}
 		
-	.acesso-ao-simulado h2{
-		font-size: 2.3rem;
-	}
+	.acesso-ao-simulado h2{font-size: 2.3rem;}
+	
+	.acesso-prova-gabarito h3{font-size: 2.3rem;}
 		
-	.voce-enade{
-		font-size: 2.5rem;
-	}
+	.acesso-prova-gabarito p{font-size: 1.8rem;}
 		
-	.acesso-prova-gabarito h3{
-		font-size: 2.3rem;
-	}
+	footer p{margin-bottom: 20px;}
 		
-	.acesso-prova-gabarito p{
-		font-size: 1.8rem;
-	}
+	footer div p a{font-size: 1.4rem;}
 		
-	footer p{
-		margin-bottom: 20px;/*Define a area de margem do elemento na parte inferior*/
-	}
-		
-	footer div p a{
-		font-size: 1.4rem;
-	}
-		
-	.fatec_sp_enade{
+	.fatec_sp{
 		width: 100%;
 		height: auto;
 	}
 		
-	.corpo-pagina{
-		padding-bottom: 40px;/*Define as dimensões do espaçamento interno inferior*/
-	}
+	.corpo-pagina{padding-bottom: 40px;}
 		
-	.intrucoes-principais h2{
-		font-size: 3.5rem;
-	}
+	.intrucoes-principais h2{font-size: 3.5rem;}
 		
-	.intrucoes-finais h2{
-		font-size: 2.9rem;
-	}
+	.intrucoes-finais h2{font-size: 2.9rem;}
 		
 	.intrucoes-principais p {
 		margin-left: 1%;
@@ -90,13 +52,9 @@
 		font-size: 1.7rem;
 	}
 			
-	.numero-pergunta{
-		margin-left: 14%;
-	}
+	.numero-pergunta{margin-left: 14%;}
 		
-	.texto-pergunta p{
-		font-size: 1.6rem;
-	}
+	.texto-pergunta p{font-size: 1.6rem;}
 		
 	.alternativas-pergunta{
 		margin-left: 5%;
@@ -104,9 +62,7 @@
 		font-size: 1.6rem;
 	}
 		
-	.fonte-pergunta{
-		font-size: 1.15rem;
-	}
+	.fonte-pergunta{font-size: 1.15rem;}
 		
 	.alternativas-pergunta label{
 		margin-top: 0.5%;/*Define a area de margem do elemento na parte superior*/
@@ -123,19 +79,14 @@
 		font-weight: 400;
 	}
 
-	.mensagem-final-simulado {
-		font-size: 2.7rem;
-	}
+	.mensagem-final-simulado {font-size: 2.7rem;}
 
 	.sub-mensagem-final-simulado {
 		font-size: 2rem;
 		margin-top: 2%;
 	}
 
-
-	.button-nav {
-		font-size: 1.1rem;
-	}
+	.button-nav {font-size: 1.1rem;}
 
 	.info-resultado {
     	margin-left: 1%;
@@ -175,9 +126,7 @@
     	width: 100%;
 	}
 
-	.div-nota-individual {
-		margin-top: 4.0%;
-	}
+	.div-nota-individual {margin-top: 4.0%;}
 
 	.info-resultado-estatisticas p {
 	    margin-top: 1.5%;
@@ -191,16 +140,10 @@
 }
 
 @media (min-width: 426px) and (max-width: 912px){
-	
-	.grafico-evolucao{
-		margin-bottom: 35vh;
-	}
+	.grafico-evolucao{margin-bottom: 35vh;}
 
 	@media (max-width: 912px){
-
-		.inteiro-acertos, .inteiro-nao-respondidas {
-    		margin-right: 0%;
-		}
+		.inteiro-acertos, .inteiro-nao-respondidas {margin-right: 0%;}
 	}
 	
 	@media (max-width: 768px){
@@ -235,50 +178,30 @@
 			margin-right: 2%;
 		}
 
-		.responsaveis-site p{
-			font-size: 2rem;
-		}
+		.responsaveis-site p{font-size: 2rem;}
 
-		.responsaveis-site b{
-			font-size: 2.2rem;
-		}
+		.responsaveis-site b{font-size: 2.2rem;}
 
-		header nav ul li a {
-			font-size: 2rem;
-		}
+		header nav ul li a {font-size: 2rem;}
 
-		footer div p a{
-			font-size: 1.9rem;
-		}
+		footer div p a{font-size: 1.9rem;}
 
-		.acesso-ao-simulado h2{
-			font-size: 2.9rem;
-		}
+		.acesso-ao-simulado h2{font-size: 2.9rem;}
 
-		.acesso-prova-gabarito h3{
-			font-size: 2.8rem;
-		}
+		.acesso-prova-gabarito h3{font-size: 2.8rem;}
 
-		.intrucoes-principais p {
-			font-size: 2rem;
-		}
+		.intrucoes-principais p {font-size: 2rem;}
 
 		.corpo-pergunta {
 			margin-right: 5%;
 			margin-left: 5%;
 		}
 
-		.nav-pergunta{
-			font-size: 2rem;
-		}
+		.nav-pergunta{font-size: 2rem;}
 
-		.fonte-pergunta{
-			font-size: 1rem;
-		}
+		.fonte-pergunta{font-size: 1rem;}
 
-		.enunciado-pergunta p{
-			font-size: 2rem;
-		}
+		.enunciado-pergunta p{font-size: 2rem;}
 
 		.numero-pergunta{
 			font-size: 1.8rem;
@@ -362,22 +285,16 @@
     		margin-right: 2.5%;
 		}
 
-		.sobre-o-enade {
+		.sobre {
 			margin-left: 6%;
 			margin-right: 6%;
 		}
 		
-		.acesso-ao-simulado h2{
-			font-size: 3rem;
-		}
+		.acesso-ao-simulado h2{font-size: 3rem;}
 
-		.acesso-prova-gabarito h3{
-			font-size: 2.4rem;
-		}
+		.acesso-prova-gabarito h3{font-size: 2.4rem;}
 
-		.button-nav{
-			font-size: 1.4rem;
-		}
+		.button-nav{font-size: 1.4rem;}
 
 		.imagem-informativa{
 			width: 100%;
@@ -390,75 +307,54 @@
 			margin-right: 6%;
 		}
 
-		.numero-pergunta {
-			margin-left: 5%;
-		}
+		.numero-pergunta {margin-left: 5%;}
 
 		.corpo-pergunta {
 			margin-right: 4%;
 			margin-left: 4%;
 		}
 
-		.nav-pergunta {
-			font-size: 2.3rem;
-		}
+		.nav-pergunta {font-size: 2.3rem;}
 
 		.texto-pergunta {
 			margin-left: 5%;
 			margin-right: 5%;
 		}
 
-		.texto-pergunta p{
-			font-size: 1.75rem;
-		}
+		.texto-pergunta p{font-size: 1.75rem;}
 
 		.alternativas-pergunta{
 			margin-left: 8%;
 			margin-right: 8%;				
 		}
 
-		.enunciado-pergunta{
-			font-size: 1.9rem;
-		}
+		.enunciado-pergunta{font-size: 1.9rem;}
 
-		.alternativas-pergunta label{
-			font-size: 1.8rem;
-		}
+		.alternativas-pergunta label{font-size: 1.8rem;}
 
-		.buttons-nav input{
-			font-size: 1.7rem;
-		}
+		.buttons-nav input{font-size: 1.7rem;}
 
 		.buttons-nav input:hover{
 			font-size: 1.9rem; /* Definindo o tamanho da fonte quando o cursor estiver sobre o componente.*/
 			font-weight: 700; /* Definindo o tamanho da fonte quando o cursor estiver sobre o componente.*/
 		}
 
-		header nav ul li a {
-			font-size: 1.50rem;
-		}
+		header nav ul li a {font-size: 1.50rem;}
 
-		footer div p a{
-			font-size: 2rem;
-		}
+		footer div p a{font-size: 2rem;}
 
 		.sobre-o-site{
 			margin-left: 7%;
 			margin-right: 7%;
 		}
 
-		.responsaveis-site p{
-			font-size: 2rem;
-		}
+		.responsaveis-site p{font-size: 2rem;}
 
-		.responsaveis-site b{
-			font-size: 2.3rem;
-		}
+		.responsaveis-site b{font-size: 2.3rem;}
 
 		.popup{
 			height: 470px;
 			width: auto;
-
 			margin-left: 5%;	
 			margin-right: 5%;
 		}
@@ -472,7 +368,6 @@
 		.primeiro-dados-por-inteiro div {
 			height: auto;
     		width: 100%;
-
 		}
 
 		div .inteiro-acertos{
@@ -501,9 +396,7 @@
     		width: 100%;
 		}
 
-		.div-nota-individual {
-			margin-top: 4.0%;
-		}
+		.div-nota-individual {margin-top: 4.0%;}
 
 		.info-resultado-estatisticas p {
 	    	margin-top: 1.5%;
@@ -615,15 +508,7 @@
             margin-left: 2%;  
         }
 		
-		.info-enade{
-			width: 85%;
-			height: 70%;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		
-		.sobre-o-enade{
+		.sobre{
 			margin-left: 5%;
 			margin-right: 5%;
 		}
@@ -750,21 +635,9 @@
 			margin-right: 2%;
 		}
 		
-		.sobre-o-enade{
+		.sobre{
 			margin-left: 6%;
 			margin-right: 6%;
-		}
-		
-		.info-enade{
-			width: 80%;
-			height: 65%;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		
-		.info-enade blockquote{
-			font-size: 1.8rem;
 		}
 		
 		.acesso-ao-simulado h2{
@@ -855,18 +728,6 @@
             margin-left: 2%;  
         }
 		
-		.info-enade{
-			width: 70%;
-			height: 50%;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		
-		.info-enade blockquote{
-			font-size: 1.35rem;
-		}
-		
 		.responsaveis-site{
 			font-size: 1.6rem;
 			margin-left: 10%;
@@ -879,31 +740,23 @@
 			margin-right: 5%;
 		}
 		
-		.fonte-video{
-			font-size: 1.35rem;
-		}
-		
 		.corpo-pagina {
 			margin-left: 2%;
 			margin-right: 2%;
 		}
 		
-		.sobre-o-enade{
+		.sobre{
 			font-size: 1.7rem;
 			margin-left: 5%;
 			margin-right: 5%;
 		}
 		
-		.fonte-sobre-o-enade{
+		.fonte-sobre{
 			font-size: 1.5rem;
 		}
 		
 		.acesso-ao-simulado h2{
 			font-size: 2.20rem;
-		}
-		
-		.voce-enade{
-			font-size: 2.5rem;
 		}
 		
 		.acesso-prova-gabarito h3{
@@ -946,13 +799,9 @@
 			font-size: 1.5rem;
 		}
 		
-		.fonte-pergunta{
-			font-size: 1.05rem;
-		}
+		.fonte-pergunta{font-size: 1.05rem;}
 		
-		.alternativas-pergunta label{
-			margin-top: -4%;
-		}
+		.alternativas-pergunta label{margin-top: -4%;}
 		
 		.button-nav {
 			font-size: 1.3rem;
@@ -969,9 +818,7 @@
 			font-weight: 400;
 		}
 
-		footer div p a{
-			font-size: 1.6rem;
-		}
+		footer div p a{font-size: 1.6rem;}
 
 		.info-resultado {
     		margin-left: 1%;
@@ -991,9 +838,7 @@
     		width: 100%;
 		}
 
-		.div-nota-individual {
-			margin-top: 4.0%;
-		}
+		.div-nota-individual {margin-top: 4.0%;}
 
 		.info-resultado-estatisticas p {
 	    	margin-top: 1.5%;
@@ -1007,18 +852,6 @@
 	}
 
 	@media (max-width: 280px) {
-		.info-enade{
-			width: 70%;
-			height: 50%;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		
-		.info-enade blockquote{
-			font-size: 1.2rem;
-		}
-		
 		.responsaveis-site{
 			font-size: 1.6rem;
 			margin-left: 10%;
@@ -1031,65 +864,39 @@
 			margin-right: 5%;
 		}
 		
-		.fonte-video{
-			font-size: 1.35rem;
-		}
-		
 		.corpo-pagina {
 			margin-left: 2%;
 			margin-right: 2%;
 		}
 		
-		.sobre-o-enade{
+		.sobre{
 			font-size: 1.3rem;
 			margin-left: 5%;
 			margin-right: 5%;
 		}
 		
-		.fonte-sobre-o-enade{
-			font-size: 1.35rem;
-		}
+		.fonte-sobre{font-size: 1.35rem;}
 		
-		.acesso-ao-simulado h2{
-			font-size: 2.20rem;
-		}
+		.acesso-ao-simulado h2{font-size: 2.20rem;}
 		
-		.voce-enade{
-			font-size: 2.5rem;
-		}
+		.acesso-prova-gabarito h3{font-size: 2rem;}
 		
-		.acesso-prova-gabarito h3{
-			font-size: 2rem;
-		}
+		.acesso-prova-gabarito p{font-size: 1.5rem;}
 		
-		.acesso-prova-gabarito p{
-			font-size: 1.5rem;
-		}
+		footer p{margin-bottom: 20px;}
 		
-		footer p{
-			margin-bottom: 20px;
-		}
+		footer div p a{font-size: 1.4rem;}
 		
-		footer div p a{
-			font-size: 1.4rem;
-		}
-		
-		.fatec_sp_enade{
+		.fatec_sp{
 			width: 100%;
 			height: auto;
 		}
 		
-		.corpo-pagina{
-			padding-bottom: 40px;
-		}
+		.corpo-pagina{padding-bottom: 40px;}
 		
-		.intrucoes-principais h2{
-			font-size: 3.5rem;
-		}
+		.intrucoes-principais h2{font-size: 3.5rem;}
 		
-		.intrucoes-finais h2{
-			font-size: 2.8rem;
-		}
+		.intrucoes-finais h2{font-size: 2.8rem;}
 		
 		.intrucoes-principais p {
 			margin-left: 5%;
@@ -1097,13 +904,9 @@
 			font-size: 1.5rem;
 		}
 			
-		.numero-pergunta{
-			margin-left: 4%;
-		}
+		.numero-pergunta{margin-left: 4%;}
 		
-		.texto-pergunta p{
-			font-size: 1.5rem;
-		}
+		.texto-pergunta p{font-size: 1.5rem;}
 		
 		.alternativas-pergunta{
 			margin-left: 5%;
@@ -1111,13 +914,9 @@
 			font-size: 1.5rem;
 		}
 		
-		.fonte-pergunta{
-			font-size: 1.05rem;
-		}
+		.fonte-pergunta{font-size: 1.05rem;}
 		
-		.alternativas-pergunta label{
-			margin-top: -5%;
-		}
+		.alternativas-pergunta label{margin-top: -5%;}
 		
 		.button-nav {
 			font-size: 0.85rem;
@@ -1134,19 +933,14 @@
 			font-weight: 400;
 		}
 
-		.mensagem-final-simulado {
-			font-size: 2.7rem;
-		}
+		.mensagem-final-simulado {font-size: 2.7rem;}
 
 		.sub-mensagem-final-simulado {
 			font-size: 2rem;
 			margin-top: 2%;
 		}
 
-
-		.button-nav {
-			font-size: 1.1rem;
-		}
+		.button-nav {font-size: 1.1rem;}
 
 		.info-resultado {
     		margin-left: 1%;
@@ -1177,8 +971,6 @@
     		width: 100%;
 		}
 
-		.div-nota-individual {
-			margin-top: 4.0%;
-		}
+		.div-nota-individual {margin-top: 4.0%;}
   	}
 }

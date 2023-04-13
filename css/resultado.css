@@ -80,11 +80,6 @@
     font-size: 1.8rem; /* Adicionando um tamanho de fonte. */
 }
 
-.retorno-acertos{
-    margin-top: 5%; /* Adicionando uma margem em relação ao conteúdo acima. */
-    margin-bottom: 2%; /* Adicionando uma margem em relação ao conteúdo abaixo. */
-}
-
 .mensagem-evolucao-usuario{
     margin-top: 5%; /* Adicionando uma margem em relação ao conteúdo acima. */
 }

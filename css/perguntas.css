@@ -17,11 +17,6 @@
     color: black; /* Definindo uma cor */
 }
 
-.numero-pergunta a:hover{
-    color: gray; /* Definindo uma cor */
-    font-size: 1.9rem; /* Definindo o tamanho da fonte. */
-}
-
 .nav-pergunta{
     padding: 3%;  /* definindo um padding geral. */
     font-size: 1.7rem; /* Definindo o tamanho da fonte. */
@@ -38,7 +33,7 @@
 .nav-pergunta a:hover{
     color: white; /* Definindo uma cor*/
     background-color: #2c5ca8; /* Definindo uma cor de fundo */
-    padding: 0.9%;  /* definindo um padding geral. */
+
 }
 
 .nav-pergunta .pergunta-selecionada{
@@ -67,15 +62,20 @@
 
 .texto-pergunta{
     background-color: rgba(199, 199, 199, 0.527); /* Definindo uma cor de fundo */
-    border-radius: 2%; /* definindo o arredontamendo da borda. */
-    padding: 4%;  /* definindo um padding geral. */
+    border-radius: 5%; /* definindo o arredontamendo da borda. */
+    padding: 4% 4% 3% 4%;  /* definindo um padding geral. */
     border-style: solid; /* Definindo um estilo de borda */
     text-align: start; /* Definindo o alinhamento do texto */
-    border-radius: 5%; /* definindo o arredontamendo da borda. */
     border-color: rgba(0, 0, 0, 0.445); /* Definindo uma cor de borda */
     border-width: 1px; /* Definindo a largura da borda. */
-    margin-left: 9%; /* Definindo uma margem em relação ao item a esquerda. */
-    margin-right: 9%; /* Definindo uma margem em relação a direita. */
+    margin-left: 8%; /* Definindo uma margem em relação ao item a esquerda. */
+    margin-right: 8%; /* Definindo uma margem em relação a direita. */
+}
+
+.texto-pergunta p{
+    line-height: 27px;
+    margin-bottom: 15px;
+    text-align: justify;
 }
 
 .imagem-pergunta{
@@ -94,9 +94,7 @@
 }
 
 .enunciado-pergunta{
-    margin-top: 1%; /* Definindo uma margem em relação ao item acima. */
-    margin-left: 10%;  /* Definindo uma margem em relação a esquerda. */
-    margin-right: 10%;  /* Definindo uma margem em relação a direita. */
+    margin: 4% 10% 0; /* Definindo uma margem. */
     text-align: start; /* Definindo o alinhamento do texto. */
 }
 

@@ -3,83 +3,58 @@
 <HTML Lang = "PT-BR"> <!-- Abrindo a tag 'html' para abrir o html, e colocando como linguagem o português brasileiro-->
     <Head> <!-- Abrindo a "cabeça" do HTML-->
         <Meta CharSet = "UTF-8"/> <!-- Para podermos colocar acarcter especial no HTML-->
-        <Meta Name = "Author" Content = "Éric Carvalho"/> <!-- Autor, quem fez o HTML-->
         <Meta Name = "ViewPort" Content = "width=device-width, initial-scale=1.0"/>
         <Title>Sobre - SimuNade</Title> <!-- Colocando o titulo do HTML-->
-        <Link Rel = "Icon" Href = "http://enade.inep.gov.br/enade/favicon.ico"/> <!-- Colocando o ícone no cabeçalho da página-->
+        <Link Rel="Icon" href="https://www.pciconcursos.com.br/img/pcimobi.png"/><!-- Colocando o ícone no cabeçalho da página-->
         <Link Rel = "StyleSheet" Type = "Text/Css" Href = "../../css/layout.css"/> <!-- Linkando o css para o layout da página-->
       <Link Rel = "StyleSheet" Type = "Text/Css" Href = "../../css/index.css"/> <!-- Linkando o css da página-->
       <Link Rel = "StyleSheet" Type = "Text/Css" Href = "../../css/responsive.css" Media = "screen and (max-width: 1440px)"/> <!-- Linkando o css para a responsividade-->      
     </Head> <!-- Fechando a tag para a "cabeça" do HTML-->
 
     <Body> <!-- Abrindo a tag 'body' para o corpo do HTML-->
-      <Header> <!-- Abrindo a tag Header para fazer o cabeçalho do site-->
-          <Div Class = "container"> <!-- Abrindo uma div com a classe "container"-->
-              <Div Class = "inep_enade"> <!-- Abrindo uma div com a classe "inep_enade"-->
-                  <Div Class = "logo_inep"> <!-- Abrindo uma div com a classe "logo_inep"-->
-                  <a Target = "_Blank" Href = "https://www.gov.br/inep/pt-br"> <!-- Abrindo uma tag a para fazer um link para a página do inep-->    
-                      <Img Src = "../../Images/Principal/ofc_logo_inep.svg" Alt = "INEP"/> <!-- Colocando o logo do inep dentro do link para o site oficial-->
-                  </a> <!-- Fechando a tag a -->
-                  </Div> <!-- Fechando a div de clsse "logo_inep" -->
-                  <Span Class = "logo_enade"> <!-- Abrindo um 'span' com classe "logo_enade"-->
-                  <b> <!-- Abrindo a tag 'b' para deixar o for escrito em negrito-->
-                      Enade <!-- Escrevendo "Enade" entre a tag 'b', para deixar em negrito-->
-                  </b> <!-- Fechando a tag 'b'-->
-                  </Span> <!-- Fechando a tag 'span'-->
-              </Div> <!-- Fechando a 'div' de classe "inep_enade"-->
-              <Div Class = "menu-section"> <!-- Abrindo uma 'div' com classe "meu_section"-->
-                  <Div Class = "menu-toggle"> <!-- Abrindo uma 'div' com classe "menu-toggle"-->
-                  <Div Class = "one"></Div> <!-- Abrindo e fechando uma 'div' com classe "one"-->
-                  <Div Class = "two"></Div> <!-- Abrindo e fechando uma 'div' com classe "two"-->
-                  <Div Class = "three"></Div> <!-- Abrindo e fechando uma 'div' com classe "three"-->
-                  </Div> <!-- Fechando a 'div' com classe "menu-toggle"-->
-                  <Nav> <!-- Abrindo uma tag 'nav', para fazer a navegação entre páginas-->
-                      <Ul> <!-- Abrindo a tag 'ul' para fazer uma lista não ordenada-->
-                          <Li> <!-- Abrindo a tag 'li' para acrescentar uma linha à lista-->
-                          <a Href="Index.html">Início</a> <!-- Abrindo a tag 'a' para fazer um link para a página index.html-->
-                          </Li> <!-- Fechando a tag 'li' para informar o fim de um item à lista-->
-                          <Li> <!-- Abrindo a tag 'li' para acrescentar uma linha à lista-->
-                          <a Href="Credits.html">Créditos</a> <!-- Abrindo a tag 'a' para fazer um link para a página Credits.html-->
-                          </Li><!-- Fechando a tag 'li' para informar o fim de um item à lista-->
-                          <Li> <!-- Abrindo a tag 'li' para acrescentar uma linha à lista-->
-                          <a Href="About.html">Sobre</a> <!-- Abrindo a tag 'a' para fazer um link para a página About.html-->
-                          </Li> <!-- Fechando a tag 'li' para informar o fim de um item à lista-->
-                      </Ul> <!-- Fechando a tag 'ul' para determinar o fim da lista-->
-                  </Nav> <!-- Fechando a tag 'nav'-->
-              </Div> <!-- Fechando a 'div' com classe "menu-section"-->
-          </Div> <!-- Fechando a 'div' com classe "container"-->
-      </Header> <!-- Fechando a tag 'Header' para finalizar o cabeçalho da página-->
+      <header>
+        <div Class="container">
+          <div Class="logos">
+            <div Class="logo_pci">
+              <a Target="_Blank" Href="https://www.pciconcursos.com.br/">
+                <img src="https://www.pciconcursos.com.br/img/pcimobi.png" widht="65" height="45">
+              </a>
+            </div>
+            <span Class="logo_parana">
+              <b>
+                PARANACIDADE
+              </b>
+            </span>
+          </div>
+          <div Class="menu-section">
+            <div Class="menu-toggle">
+              <div Class="one"></div>
+              <div Class="two"></div>
+              <div Class="three"></div>
+            </div>
+            <nav>
+              <Ul>
+                <Li>
+                  <a Href="Index.html">Início</a>
+                </Li>
+                <Li>
+                  <a Href="../Perguntas/Instrucoes.html">Iniciar Simulado</a>
+                </Li>
+                <Li>
+                  <a Href="About.html">Sobre</a>
+                </Li>
+                <Li>
+                  <a Href="Credits.html">Créditos</a>
+                </Li>
+                
+              </Ul>
+            </nav>
+          </div>
+        </div>
+      </header>
 
       <Main> <!-- Abrindo a tag 'main' para fazer a parte principal do site-->
         <Div Class = "corpo-pagina"> <!-- Abrindo uma 'div' com a classe "corpo-pagina"-->
-          <Div Class = "info-enade"> <!-- Abrindo uma 'div' com a classe "info-enade"-->
-            <Section class="cards"> <!-- Abrindo uma tag 'section' com a classe "cards"-->
-              <Div class="card"> <!-- Abrindo uma 'div' com a classe "card"-->
-                <Picture Class = "image" Alt = "Imagem do video"> <!-- Abrindo a tag 'picture' para colocar as fotos em diferentes tamanhos-->
-                  <Source Media = "(min-width: 768px)" SrcSet = "https://i.ytimg.com/vi/avJZ2mtFljc/maxresdefault.jpg"/> <!-- Foto maior-->
-                  <Source Media = "(min-width: 320px)" SrcSet = "https://i.ytimg.com/vi/avJZ2mtFljc/hqdefault.jpg"/> <!-- Foto média-->
-                  <Source Media = "(min-width: 10px)" SrcSet = "https://i.ytimg.com/vi/avJZ2mtFljc/mqdefault.jpg"/> <!-- Foto menor-->
-  
-                  <Img src="https://i.ytimg.com/vi/avJZ2mtFljc/hqdefault.jpg" /> <!-- Usando a tag 'img' para inserir a imagem-->
-                </Picture> <!-- Fechando a tag 'picture'-->
-                <Div class="content"> <!-- Abrindo uma 'div' com a classe "content"-->
-                  <Div Class = "info"> <!-- Abrindo uma 'div' com a classe "info"-->
-                    <p Class = "text--medium">Duração do video</p> <!-- Usando a tag 'p' com a classe "Text--medium" para fazer um parágrafo -->
-                  </Div> <!-- Fechando a 'div' com a classe "info"-->
-                </Div> <!-- Fechando a 'div' com a classe "content"-->
-              </Div> <!-- Fechando a 'div' com a classe "card"-->
-            </Section> <!-- Fechando a tag 'section' com a classe "cards"-->
-            <Div Class = "fonte-video"> <!-- Abrindo uma 'div' com a classe "fonte-video"-->
-              <Blockquote> <!-- Abrindo a tag 'blockquote' para fazer uma citação-->
-                  <i> <!-- Abrindo a tag 'i' para que o texto que estiver nela fique com a fonte itálica-->
-                      Fonte: 
-                      <a Target = "_Blank" Href = "https://www.youtube.com/watch?v=avJZ2mtFljc"> <!-- Abrindo a tag 'a' para fazer um link para o vídeo no youtube-->
-                        https://www.youtube.com/watch?v=avJZ2mtFljc/ <!-- Inserindo um texto para o link-->
-                      </a> <!-- Fechando a tag 'a' para fechar o link-->
-                  </i> <!-- Fechando a tag 'i'-->
-              </Blockquote> <!-- Fechando a tag 'blockquote'-->
-            </Div> <!-- Fechando a 'div' com a classe "fonte-video"-->
-          </Div> <!-- Fechando a 'div' com a classe "info-enade"-->
   
           <Div Class = "modal-overlay"> <!-- Abrindo uma 'div' com a classe "modal-overlay"-->
             <Div Class = "modal"> <!-- Abrindo uma 'div' com a classe "modal"-->
@@ -101,13 +76,7 @@
             </Div> <!-- Fechando a 'div' com classe "modal"-->
           </Div> <!-- Fechando a 'div' com classe "modal-overlay"-->
   
-          <Div> <!-- Abrindo uma 'div'-->
-            <Div> <!-- Abrindo uma 'div'-->
-                <H3 Class = "voce-enade">Você sabe o que é o Enade?</H3> <!-- Colocando um texto entre as tags 'h3' para ele ficar em formato de título-->
-            </Div> <!-- Fechando a 'div'-->
-          </Div> <!-- Fechando a 'div'-->
-  
-          <Div Class = "sobre-o-enade"> <!-- Abrindo uma 'div' com a classe "sobre-o-enade"-->
+          <Div Class = "sobre"> <!-- Abrindo uma 'div' com a classe "sobre"-->
             <p> <!-- Abrindo a tag 'p', para escrevermos um parágrafo no HTML-->
               "O Exame Nacional de Desempenho dos Estudantes (Enade) avalia o rendimento dos
               concluintes dos cursos de graduação em relação aos conteúdos programáticos
@@ -139,13 +108,13 @@
               no Catálogo Nacional de Cursos Superiores de Tecnologia (CNCST), do Ministério da Educação."
             </p> <!-- Fechando a tag 'p' para finalizar o parágrafo-->
   
-            <p Class = "fonte-sobre-o-enade">Fonte: <!-- Abrindo a tag 'p', para escrevermos um parágrafo no HTML-->
+            <p Class = "fonte-sobre">Fonte: <!-- Abrindo a tag 'p', para escrevermos um parágrafo no HTML-->
               <!-- Abrindo a tag 'a' para fazer um link para o site do enade-->
               <a Target = "_Blank" Href = "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enade">
                 https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enade <!-- Colocando um texto para o link-->
               </a> <!-- Fechando a tag 'a' para fechar o link-->
             </p> <!-- Fechando a tag 'p' para finalizar o parágrafo-->
-          </Div> <!-- Fechando a 'div' com a classe "sobre-o-enade"-->
+          </Div> <!-- Fechando a 'div' com a classe "sobre"-->
       
           <Div Class = "acesso-ao-simulado"> <!-- Abrindo uma 'div' com a classe "acesso-ao-simulado"-->
             <H2>Simulado Enade - Análise e Desenvolvimento de Sistemas (2021)</H2> <!-- Colocando um texto entre as tags 'h2' para o texto tomar forma de título-->

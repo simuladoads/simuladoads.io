@@ -1,4 +1,4 @@
-/*
+/*ACER
 	Declarando, respectivamente, variáveis para
 	armazenar o total de acertos, erros, perguntas respondidas,
 	porcentagem de acerto, datas, total de perguntas não respondidas,
@@ -142,67 +142,6 @@ document.getElementById('nota-final-componente-especifico-multipla-escolha').inn
 /* Altera o valor do elemento da nota final. */
 document.getElementById('nota-final').innerHTML = notaFinal
 
-/* Monta o gráfico de total de certos e erros */
-montaGrafico('acertos-erros', ['Total de acertos e erros'], 'Total de acertos', 
-[totalAcertos], 'rgba(0, 255, 0, 0.6)',  'rgba(0, 255, 0, 1)', 'Total de erros', 
-[totalErros], 'rgba(255, 0, 0, 0.6)',  'rgba(255, 0, 0, 1)')
-
-/* Monta o gráfico de total perguntas respondidas e não respondidas. */
-montaGrafico('respondidas-e-naorespondidas', ['Total de perguntas não respondidas e respondidas'],
-'Total de perguntas não respondidas', [totalNaoRespondidas], 'rgba(180, 180, 180, 0.6)', 
-'rgba(180, 180, 180, 1)', 'Total de perguntas respondidas', [totalRespondidas], 
-'rgba(255, 155, 55, 0.6)', 'rgba(255, 153, 51, 1)')
-
-/* function responsável por montar 2 gráfico a cada vez que for chamada. */
-function montaGrafico(idCanvas, labels, label1, dados1, corFundoPrimeiroGrafico, corBordaPrimeiroGrafico, 
-label2, dados2, corFundoSegundoGrafico, corBordaSegundoGrafico){
-	let delayed;
-	var grafico = document.getElementById(idCanvas).getContext('2d');
-	var dados = {
-		type: "bar",
-		data: {
-			labels: labels,
-			datasets: [{
-					label: label1,
-					data: dados1,
-					backgroundColor: corFundoPrimeiroGrafico,
-					borderColor: corBordaPrimeiroGrafico,
-				},
-				{
-					label: label2,
-					data: dados2,
-					backgroundColor: corFundoSegundoGrafico,
-					borderColor: corBordaSegundoGrafico,
-			}]
-		},
-		options: {
-			responsive: true,
-			animation: {
-				onComplete: () => {
-					delayed = true;
-				},
-				delay: (context) => {
-					let delay = 0;
-					if (context.type === 'data' && context.mode === 'default' && !delayed) {
-						delay = context.dataIndex * 850 + context.datasetIndex * 950;
-					}
-					return delay;
-				},
-			},
-			scales: {
-				y: {
-					display: true,
-					title: {
-						display: true,
-						text: 'Total de perguntas'
-					}
-				},
-			}
-		}
-	}
-	new Chart(grafico, dados);
-}
-
 /* Responsável por converter a página em pdf para ser baixada. */
 function imprimirResultado(){
 	window.print()
@@ -211,16 +150,16 @@ function imprimirResultado(){
 /* Insere o total de acertos, erros, perguntas não respondidas e total de perguntas respondidas. */
 function atribuiInformacoesInteiras(acertos, erros, naoRespondidas, respondidas){
 	/* Nas 4 linhas a seguir é feito o cálculo da porcentagem de acerto, erros, perguntas nao respondidas e perguntas respondidas. */
-	let porcentAcerto = Math.round((acertos/35)*100)
-	let porcentErros = Math.round((erros/35)*100)
-	let porcentNaoRespondidas = Math.round((naoRespondidas/35)*100)
-	let porcentRespondidas = Math.round((respondidas/35)*100)
+	let porcentAcerto = Math.round((acertos/40)*100)
+	let porcentErros = Math.round((erros/40)*100)
+	let porcentNaoRespondidas = Math.round((naoRespondidas/40)*100)
+	let porcentRespondidas = Math.round((respondidas/40)*100)
 
 	/* E depois mudamos os valores de cada elemento da página de acordo com os cálculos e variáveis passadas anteriormente. */
-	document.getElementById('acertos').innerHTML = `${acertos}/35 <b>(${porcentAcerto}%)</b>`   
-	document.getElementById('erros').innerHTML = `${erros}/35 <b>(${porcentErros}%)</b>`
-	document.getElementById('nao-respondidas').innerHTML = `${naoRespondidas}/35 <b>(${porcentNaoRespondidas}%)</b>`
-	document.getElementById('respondidas').innerHTML = `${respondidas}/35 <b>(${porcentRespondidas}%)</b>`	
+	document.getElementById('acertos').innerHTML = `${acertos}/40 <b>(${porcentAcerto}%)</b>`   
+	document.getElementById('erros').innerHTML = `${erros}/40 <b>(${porcentErros}%)</b>`
+	document.getElementById('nao-respondidas').innerHTML = `${naoRespondidas}/40 <b>(${porcentNaoRespondidas}%)</b>`
+	document.getElementById('respondidas').innerHTML = `${respondidas}/40 <b>(${porcentRespondidas}%)</b>`	
 }
 
 /* Pega o último valor do localStorage e retorna ele. */

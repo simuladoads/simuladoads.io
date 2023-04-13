@@ -196,7 +196,7 @@ function salvaResultadoSimulado(){
         o total de perguntas não respondidas.
     */
 	let tempoDecorrido = 0
-	let totalNaoRespondidas = 35
+	let totalNaoRespondidas = 40
 
     /* 
         Declranado, respectivamente
@@ -268,7 +268,7 @@ function salvaResultadoSimulado(){
         }
 
         /* calcula o total de perguntas não respondidas. */
-		totalNaoRespondidas = 35 - totalRespondidas.length
+		totalNaoRespondidas = 40 - totalRespondidas.length
 
         /* Realiza o cálculo, final, da formaçãoGeral  */
         notaFinalFormacaoGeral = (formacaoGeral * 0.6).toPrecision(2)
@@ -302,7 +302,7 @@ function salvaResultadoSimulado(){
 	}
 
     /* Obtém a porcentagem de acerto. */
-	var porcentagemAcerto = Math.round((totalAcertos.length / 35) * 100)
+	var porcentagemAcerto = Math.round((totalAcertos.length / 40) * 100)
 
     /* Salva a data (dia/mes/ano) em que a prova foi realizada. */
 	let data = new Date()

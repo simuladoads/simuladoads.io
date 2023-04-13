@@ -34,6 +34,8 @@ body{
   font-size: 1.6rem; /* Definindo o tamanho da fonte do corpo do site, no caso a medida é dada por (65.5/100*16) * 1.6 */
 }
 
+main {min-height: 656px;}
+
 header {
   background-color: #2c5ca8; /* Definindo uma cor de fundo para o header. */
 }
@@ -159,7 +161,7 @@ footer{
   width: 100%; /*Tornando a largura 90% do valor máximo de largura pré-estabelecido.*/
 
   background-color:   #6491da; /* Definindo uma cor de fundo */
-  padding: 80px 0; /* definindo um padding em relação ao topo. */
+  padding: 70px 0; /* definindo um padding em relação ao topo. */
   display:flex; /* Definindo como os elementos serão dispostos na página. */
   justify-content: center; /* Definindo o alinhamento do conteudo no eixo principal. */
   align-items: center; /* Definindo o alinhamento dos itens */

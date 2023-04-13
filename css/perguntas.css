@@ -96,6 +96,7 @@
 .enunciado-pergunta{
     margin: 4% 10% 0; /* Definindo uma margem. */
     text-align: start; /* Definindo o alinhamento do texto. */
+    text-align: justify;
 }
 
 table, td, th {

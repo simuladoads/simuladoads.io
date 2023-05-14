@@ -1,4 +1,4 @@
-/*ACER
+/*
 	Declarando, respectivamente, variáveis para
 	armazenar o total de acertos, erros, perguntas respondidas,
 	porcentagem de acerto, datas, total de perguntas não respondidas,
@@ -15,7 +15,7 @@ notaFinalComponenteEspecifico = 0, notaFinalFormacaoGeral = 0
 
 /* Se o localStorage 'notaFinal' existir, então... */
 if(localStorage.getItem('acertosUsuario')){
-	/* Salvamos os dados em uma variáve, (pegando o último valor do vetor.), com exceção das datas. */
+	/* Salvamos os dados em uma variável, (pegando o último valor do vetor.), com exceção das datas. */
 	totalAcertos = atribuiValorStorage('acertosUsuario')
 	totalErros = atribuiValorStorage('errosUsuario')
 	totalRespondidas = atribuiValorStorage('totalRespondida')
@@ -102,13 +102,6 @@ if(datas.length<2){
 	/* Desabilita o botão. */
 	this.document.getElementById('conferir-evolucao').disabled = true
 }
-
-/* Se o tamanho do recomenda conteúdo for menor que 1, então... */
-if(recomendaConteudos.length < 1)
-	document.getElementById('conteudos-estudo').style.display = 'None' /* Desabilite a visualização dos conteúdos para estudar. */
-else /* Caso contrário... */
-	document.getElementById('conteudos').innerHTML = recomendaConteudos /* É inserido na página os conteúdos para estudo. */
-
 if(totalRespondidas == 0){ /* Se o usuário não tiver respondido nada, realizamos uma série de implementações de instruções ao usuário. */
 	mensagemAcertos = 'Ops, parece que você não respondeu a nenhuma pergunta. Clique em <b>REFAZER SIMULADO</b>.'
 	document.getElementById('final-simulado').innerHTML = 'Por favor, certifique-se de selecionar ao menos uma alternativa de uma questão.'
@@ -133,14 +126,68 @@ else{
 		mensagemAcertos = 'Parabéns, sua quantidade de acertos foi igual a '+porcentagemAcerto+'%.  Nos parece que você é o filho do Einsten, não reencarne.'
 }
 
-/* Insere a mensagem de acerto nos respectivos elementos. */
-document.getElementById('retorno-acertos').innerHTML = mensagemAcertos
-document.getElementById('formacao-geral-multipla-escolha').innerHTML = formacaoGeral
-document.getElementById('componente-especifico-multipla-escolha').innerHTML = componenteEspecifico
-document.getElementById('nota-final-formacao-geral-multipla-escolha').innerHTML = notaFinalFormacaoGeral
-document.getElementById('nota-final-componente-especifico-multipla-escolha').innerHTML = notaFinalComponenteEspecifico
 /* Altera o valor do elemento da nota final. */
-document.getElementById('nota-final').innerHTML = notaFinal
+
+/* Monta o gráfico de total de certos e erros */
+montaGrafico('acertos-erros', ['Total de acertos e erros'], 'Total de acertos', 
+[totalAcertos], 'rgba(0, 255, 0, 0.6)',  'rgba(0, 255, 0, 1)', 'Total de erros', 
+[totalErros], 'rgba(255, 0, 0, 0.6)',  'rgba(255, 0, 0, 1)')
+
+/* Monta o gráfico de total perguntas respondidas e não respondidas. */
+montaGrafico('respondidas-e-naorespondidas', ['Total de perguntas não respondidas e respondidas'],
+'Total de perguntas não respondidas', [totalNaoRespondidas], 'rgba(180, 180, 180, 0.6)', 
+'rgba(180, 180, 180, 1)', 'Total de perguntas respondidas', [totalRespondidas], 
+'rgba(255, 155, 55, 0.6)', 'rgba(255, 153, 51, 1)')
+
+/* function responsável por montar 2 gráfico a cada vez que for chamada. */
+function montaGrafico(idCanvas, labels, label1, dados1, corFundoPrimeiroGrafico, corBordaPrimeiroGrafico, 
+label2, dados2, corFundoSegundoGrafico, corBordaSegundoGrafico){
+	let delayed;
+	var grafico = document.getElementById(idCanvas).getContext('2d');
+	var dados = {
+		type: "bar",
+		data: {
+			labels: labels,
+			datasets: [{
+					label: label1,
+					data: dados1,
+					backgroundColor: corFundoPrimeiroGrafico,
+					borderColor: corBordaPrimeiroGrafico,
+				},
+				{
+					label: label2,
+					data: dados2,
+					backgroundColor: corFundoSegundoGrafico,
+					borderColor: corBordaSegundoGrafico,
+			}]
+		},
+		options: {
+			responsive: true,
+			animation: {
+				onComplete: () => {
+					delayed = true;
+				},
+				delay: (context) => {
+					let delay = 0;
+					if (context.type === 'data' && context.mode === 'default' && !delayed) {
+						delay = context.dataIndex * 850 + context.datasetIndex * 950;
+					}
+					return delay;
+				},
+			},
+			scales: {
+				y: {
+					display: true,
+					title: {
+						display: true,
+						text: 'Total de perguntas'
+					}
+				},
+			}
+		}
+	}
+	new Chart(grafico, dados);
+}
 
 /* Responsável por converter a página em pdf para ser baixada. */
 function imprimirResultado(){

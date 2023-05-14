@@ -161,21 +161,6 @@ function salvaResultadoSimulado(){
     let gabaritoOficial = ["Q1:C", "Q2:C", "Q3:A", "Q4:A", "Q5:C", "Q6:C", "Q7:A","Q8:B", "Q9:C", "Q10:A","Q11:C", 
     "Q12:B", "Q13:D","Q14:B", "Q15:D", "Q16:D","Q17:C", "Q18:C", "Q19:B","Q20:D", "Q21:D","Q22:C", "Q23:D","Q24:B", 
     "Q25:A", "Q26:A","Q27:B", "Q28:C", "Q29:D","Q30:B","Q31:D", "Q32:C","Q34:B", "Q35:D", "Q36:B", "Q37:A", "Q38:C", "Q39:D", "Q40:B"]
-    let conteudosProva = [
-        ['Q1', [' Interpretação e conhecimentos gerais']], ['Q2', [' Interpretação de imagem e texto']], ['Q3', [' Interpretação de charges e texto']], 
-        ['Q4', [' Interpretação e compreensão de texto']], ['Q5', [' Interpretação e compreensão de texto e imagem']], ['Q6', [' Conhecimentos gerais']], 
-        ['Q7', [' Interpretação e conhecimentos gerais']], ['Q8', [' Interpretação e conhecimentos gerais']], ['Q9', [' Levantamento de requisitos.']],
-        ['Q10', [' Teste de mesa e lógica de programação']], ['Q11', [' Teste de mesa']], ['Q12', [' Metodologias agéis']], 
-        ['Q13', [' Teste de mesa']], ['Q14', [' Gerenciamento de projetos']], ['Q15', [' Diagrama de classes']],
-        ['Q16', [' Diagrama de sequência']], ['Q17', [' SQL e DML']], ['Q18', [' Subprovessos da engenharia de requisitos']],
-        ['Q19', [' Estilos e padrões arquiteturais']], ['Q20', [' Responsabilidades inerentes no desenvolvimento do site']], ['Q21', [' Gerência de Configuração de Software (GCS)']],
-        ['Q22', [' Gerência de Configuração de Software (GCS)']], ['Q23', [' Enterprise Resource Planning (ERP)']], ['Q24', [' UML']],
-        ['Q25', [' Desenvolvimento iterativo e incremental e RAD']], ['Q26', [' LGPD']], ['Q27', [' Sistemas de numeração']],
-        ['Q28', [' Permissões de programas']], ['Q29', [' Teste de mesa']], ['Q30', [' Redes de computadores']],
-        ['Q31', [' Casos de uso']], ['Q32', [' Big data']], ['Q33', [' Modelo de Maturidade da Capacidade (CMMi)']],
-        ['Q34', [' Teste de mesa']], ['Q35', [' Teste de mesa']]
-    ]
-
 
     /* 
         Declarando, respectivamente,
@@ -184,7 +169,6 @@ function salvaResultadoSimulado(){
         respondidas, total de acertos, e total 
         de erros. 
     */
-	let recomendaConteudos = []
 	let gabaritoUsuario = []
 	let totalRespondidas = []
 	let totalAcertos = []
@@ -286,7 +270,6 @@ function salvaResultadoSimulado(){
 		for(let i = 0; i < totalErros.length; i++){
             /* pega o número (Ex: 1) da variável total erros. */
 			let questao = totalErros[i].split(":")[0].split("Q")[1]
-			recomendaConteudos.push(conteudosProva[questao-1][1])
 		}
 	}
 	
@@ -331,7 +314,6 @@ function salvaResultadoSimulado(){
             salvaDadosEvolucao(notaFinal, 'notaFinal')
             /* Salva os dados em um localStorage */
             localStorage.setItem('gabaritoUsuario', gabaritoUsuario)
-            localStorage.setItem('recomendaConteudos', recomendaConteudos)
         }
         else{ /* Caso contrário, salva os dados no localStorage se for a primeira vez. */
             localStorage.setItem('acertosUsuario', totalAcertos.length)

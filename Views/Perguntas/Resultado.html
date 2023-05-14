@@ -40,7 +40,7 @@
               <a Href="../Principal/Index.html">Início</a>
             </Li>
             <Li>
-              <a Href="../Perguntas/Instrucoes.html">Iniciar Simulado</a>
+              <a Href="../Perguntas/Instrucoes.html">Refazer Simulado</a>
             </Li>
             <Li>
               <a Href="../Principal/About.html">Sobre</a>
@@ -73,11 +73,16 @@
           de acertos, erros, perguntas não respondidas e respondidas.
         </p>
 
+        <p Class="orientacao" Id="orientacao">
+          Logo após as tabelas, também há a presença de gráficos,
+          informando sobre seu desempenho, sendo:
+        </p>
+
         <p Id="orientacao">
           <b>Total de acertos</b>, <b>Total de erros</b>, <b>Total de perguntas não respondidas</b>
           e <b>Total de perguntas respondidas</b>
         </p>
-        <br>
+
         <p>
           Confira também, logo após os gráficos, algumas
           outras informações quanto ao seu desempenho e botões para
@@ -110,17 +115,31 @@
           <p id="respondidas">X</p>
         </Div>
       </Div>
-
+      <!-- Utilizando uma div para separar os gráficos junto com aling center para centralizar e usando o elemento canvas para obter maneiras de desenhar gráficos. -->
+      <Div Class="graficos" Align="center" Id="div-graficos">
+        <H3>Total de acertos e erros</H3>
+        <canvas height="250" Class="grafico-acertos-erros" id="acertos-erros"></canvas>
+        <H3>Total de perguntas não respondidas e respondidas</H3>
+        <canvas height="250" Class="grafico-respondidas-e-naorespondidas" id="respondidas-e-naorespondidas"></canvas>
+      </Div>
       <!-- Criação de um cronometro ao iniciar e finalizar o simulado usando Javascript . -->
       <Div Class="tempo-e-tempo-medio-simulado" id="tempo-e-tempo-medio-simulado">
-        <br>
         <p Id="tempo-de-simualdo"></p>
+        <!-- Criando um parágrafo com uma classe para o css e um id para o javascript. -->
+        <p Class="mensagem-evolucao-usuario" Id="mensagem-evolucao-usuario" Style="display: none;">
+          Para acessar a página de <b>Evolução do Usuário</b> (<b>Progresso</b>),
+          você precisa, no mínimo, ter realizado o simualdo 2 vezes.
+        </p>
         <br>
       </Div>
-      <!-- Utilizando uma div para separar as tabelas junto com aling center para centralizar em seus devidos lugares. -->
-
+      
       <!-- Criando botões para ficarem no final da página. -->
       <Div Class="buttons-nav">
+        <!-- Utilizando o elemento "<a>" para criar um hyperlink para o resultado-->
+        <a Href="ResultadoEstatisticas.html">
+          <!-- Criando um botão com o elemento input e usando value para adicionar o que está escrito no botão. -->
+          <Input Type="Button" Class="button-nav" Value="Estatísticas" />
+        </a>
         <!-- criando um botao para poder refazer o simulado. -->
         <a Href="Q1C.html">
           <Input Type="Button" Class="button-nav" Value="Refazer simulado" />
@@ -144,7 +163,6 @@
           Curso de Análise e Desenvolvimento de Sistemas (ADS)
         </a>
       </p>
-
       <Div Class="fatec_sp">
         <a Target="_Blank" Href="http://www.fateccarapicuiba.edu.br">
           <Img Src="../../Images/Principal/fatec-carapicuiba-logo.png" />

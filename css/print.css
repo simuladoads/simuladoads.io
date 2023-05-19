@@ -13,6 +13,4 @@ body{
     font: 12pt serif; /* Definindo uma fonte e tamanho. */
 }
 
-.inteiro-acertos, .inteiro-nao-respondidas {
-    margin-right: 0%; /* Definindo uma margem em relação ao item a direita. */
-}
+.inteiro-acertos, .inteiro-nao-respondidas { margin-right: 0%; /* Definindo uma margem em relação ao item a direita. */ }

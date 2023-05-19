@@ -5,8 +5,8 @@
 .grafico-acertos-erros, .grafico-respondidas-e-naorespondidas{
     width: 90%; /* Adicionando uma largura. */
     height: 80%; /* Adicionando uma altura. */
-	max-height: 400px;
-	max-width: 500px;
+	max-height: 400px;/* Adicionando uma altura maxíma. */
+	max-width: 500px;/* Adicionando uma largura maxíma. */
 }
 
 .primeiro-dados-por-inteiro div, .segundo-dados-por-inteiro div{
@@ -56,12 +56,12 @@
 }
 
 .mensagem-final-simulado{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;/* Definindo a fonte que irá ser utilizada */
     font-size: 3.1rem; /* Adicionando um tamanho de fonte. */ 
 }
 
 .sub-mensagem-final-simulado{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;/* Definindo a fonte que irá ser utilizada */
     font-size: 2.1rem; /* Adicionando um tamanho de fonte. */
     margin-top: 1.5%; /* Adicionando uma margem em relação ao conteúdo acima. */
 }
@@ -98,9 +98,10 @@ table{
 	margin-top: 2.5%; /* Adicionando uma margem em relação ao conteúdo acima. */
     margin-bottom: 1.5%; /* Adicionando uma margem em relação ao conteúdo abaixo. */
 }
-
+ 
 .calculo-nota{
-    text-align: justify;
-    margin-left: 1%; margin-right: 1%;
+    text-align: justify;/* Definindo o tipo de alinhamento do texto */
+    margin-left: 1%; /* Adicionando uma margem em relação ao da esquerda. */
+    margin-right: 1%;/* Adicionando uma margem em relação ao da direita. */
 }
 

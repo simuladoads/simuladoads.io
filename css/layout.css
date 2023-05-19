@@ -1,24 +1,16 @@
-/*
-  Imporando uma fonte do google para ser utilizada.
-*/
+/*  Imporando uma fonte do google para ser utilizada. */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 
-/*
-  Definindo um estilo para todos os elementos da pag
-  pois o "*" trata-se de um seletor universal.
-*/
-
+/*  Definindo um estilo para todos os elementos da pag
+  pois o "*" trata-se de um seletor universal. */
 * {
-  box-sizing: border-box; 
+  box-sizing: border-box;/* permite controlar como o tamanho total de um elemento é calculado, não considerando o espaço ocupado pelo padding e pela borda */
   margin: 0; /* Definindo uma margem geral. */
   padding: 0; /* Definindo um padding geral. */
   outline: 0; /* Contorno da linha. */
 }
 
-/*
-  Estilizando o html e o body
-*/
-
+/*  Estilizando o html e o body */ 
 html, body {
   height: 100vh; /* Definindo um tamanho utilizando a unidade ViewHeight => que 1 unidade representa 1% do ViewPort (Área total visível). */
   font-family: "Source Sans Pro"; /* Definindo a fonte que irá ser utilizada */
@@ -26,27 +18,17 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
-html{
-  font-size: 62.5%; /* A cada 1rem será considerado 10px (65.5/100*16px = 10px) */
-}
+html{ font-size: 62.5%; /* A cada 1rem será considerado 10px (65.5/100*16px = 10px) */ }
 
-body{
-  font-size: 1.6rem; /* Definindo o tamanho da fonte do corpo do site, no caso a medida é dada por (65.5/100*16) * 1.6 */
-}
+body{ font-size: 1.6rem; /* Definindo o tamanho da fonte do corpo do site, no caso a medida é dada por (65.5/100*16) * 1.6 */ }
 
 main {min-height: 656px;}
 
-header {
-  background-color: #2c5ca8; /* Definindo uma cor de fundo para o header. */
-}
+header { background-color: #2c5ca8; /* Definindo uma cor de fundo para o header. */ }
 
-header nav ul {
-  display: flex; /* Definindo como os elementos serão dispostos na página. */
-}
+header nav ul { display: flex; /* Definindo como os elementos serão dispostos na página. */ }
 
-header nav ul li {
-  list-style: none; /* Definindo o estilo da lista. */
-}
+header nav ul li { list-style: none; /* Definindo o estilo da lista. */ }
 
 header nav ul li a {
   text-decoration: none; /* Definindo uma decoração de texto, sendo o mesmo com diferentes tipos de linhas. */
@@ -127,8 +109,7 @@ header .container {
   border-color: #6491da;
 }
 
-.corpo-pagina{
- 
+.corpo-pagina{ 
   box-shadow: inset; /* Definindo um 'sombreamento'. */
   margin-left: 6%; /* Definindo uma margem em relação a esquerda. */
   margin-right: 6%; /* Definindo uma margem em relação a direita. */
@@ -139,9 +120,7 @@ header .container {
   text-align: center; /* Definindo o alinhamento do texto. */
 }
 
-section.hero {
-  margin: 80px 0; /* Definindo uma margem geral. */
-}
+section.hero { margin: 80px 0; /* Definindo uma margem geral. */ }
 
 section.hero .container {
     width: 90%; /* Tornando a largura 90% do valor máximo de largura pré-estabelecido. */
@@ -158,23 +137,19 @@ section.hero p {
 }
 
 footer{
-  width: 100%; /*Tornando a largura 90% do valor máximo de largura pré-estabelecido.*/
-
+  width: 100%; /*Tornando a largura 90% do valor máximo de largura pré-estabelecido.*/ 
   background-color:   #6491da; /* Definindo uma cor de fundo */
   padding: 70px 0; /* definindo um padding em relação ao topo. */
   display:flex; /* Definindo como os elementos serão dispostos na página. */
   justify-content: center; /* Definindo o alinhamento do conteudo no eixo principal. */
-  align-items: center; /* Definindo o alinhamento dos itens */
-
+  align-items: center; /* Definindo o alinhamento dos itens */ 
   margin: 0; /* Definindo uma margem geral. */
   height: 100%; /* Definindo a altura */
   max-height: 100px; /* Definindo a altura máxima */
   overflow: hidden; /* Definindo o que vai acontecer com as dimensões que excedem a pag. */
 }
 
-footer p {
-  margin-bottom: 15px;  /* Definindo uma distancia em relação ao item abaixo. */
-}
+footer p { margin-bottom: 15px;  /* Definindo uma distancia em relação ao item abaixo. */ }
 
 .fatec_sp{
   display:flex; /* Definindo como os elementos serão dispostos na página. */
@@ -182,9 +157,7 @@ footer p {
   align-items: center; /* Definindo o alinhamento dos itens */
 }
 
-.fatec_sp a:hover{
-  background: rgba(255, 255, 255, 0.164) /* Definindo uma cor quando o mouse for sobreposto ao elemento.*/
-}
+.fatec_sp a:hover{ background: rgba(255, 255, 255, 0.164) /* Definindo uma cor quando o mouse for sobreposto ao elemento.*/ }
 
 footer p a {
   text-decoration: none; /* Definindo uma decoração de texto, sendo o mesmo com diferentes tipos de linhas.*/
@@ -193,10 +166,6 @@ footer p a {
   transition: all 250ms linear 0s; /* definindo a transição entre os elementos.*/
 }
 
-footer p a:hover {
-  background: rgba(255, 255, 255, 0.267) /* Definindo uma cor quando o mouse for sobreposto ao elemento.*/
-}
+footer p a:hover { background: rgba(255, 255, 255, 0.267) /* Definindo uma cor quando o mouse for sobreposto ao elemento.*/ }
 
-input {
-  margin: 20px 8px 10px; /* Definindo uma margem geral. */
-}
+input { margin: 20px 8px 10px; /* Definindo uma margem geral. */ }

@@ -9,16 +9,12 @@
     margin-left: 15%;  /* Definindo uma margem em relação ao item a esquerda. */
 }
 
-.numero-pergunta a, .nav-pergunta a{
-    text-decoration: none; /* Definindo um estilo para o link. */
-}
+.numero-pergunta a, .nav-pergunta a{ text-decoration: none; /* Definindo um estilo para o link. */ }
 
-.numero-pergunta a{
-    color: black; /* Definindo uma cor */
-}
+.numero-pergunta a{ color: black; /* Definindo uma cor */ }
 
 .nav-pergunta{
-    padding: 3%;  /* definindo um padding geral. */
+    padding: 3%;  /* definindo uma margem interna. */
     font-size: 1.7rem; /* Definindo o tamanho da fonte. */
     font-weight: 700;  /* definindo um 'peso'. */
 }
@@ -26,7 +22,7 @@
 .nav-pergunta a{
     color: white; /* Definindo uma cor */
     background-color:  #6491da; /* Definindo uma cor de fundo */
-    padding: 0.8%; /* definindo um padding geral. */
+    padding: 0.8%; /* definindo uma margem interna. */
     border-radius: 5px; /* definindo o arredontamendo da borda. */
 }
 
@@ -36,9 +32,7 @@
 
 }
 
-.nav-pergunta .pergunta-selecionada{
-    background-color:  #2c5ca8; /* Definindo uma cor de fundo */
-}
+.nav-pergunta .pergunta-selecionada{ background-color:  #2c5ca8; /* Definindo uma cor de fundo */ }
 
 .alternativas-pergunta{
     display: flex; /* Definindo como os elementos serão dispostos na página. */
@@ -50,7 +44,7 @@
 
 .corpo-pergunta{
     margin-top: 1%; /* Definindo uma margem em relação ao item acima. */
-    padding: 1%; /* definindo um padding geral. */
+    padding: 1%; /* definindo uma margem interna. */
     margin-right: 14%; /* Definindo uma margem em relação a direita. */
     margin-left: 14%;  /* Definindo uma margem em relação a esquerda. */
     border-style: solid; /* Definindo um estilo de borda */
@@ -63,7 +57,7 @@
 .texto-pergunta{
     background-color: rgba(199, 199, 199, 0.527); /* Definindo uma cor de fundo */
     border-radius: 5%; /* definindo o arredontamendo da borda. */
-    padding: 4% 4% 3% 4%;  /* definindo um padding geral. */
+    padding: 4% 4% 3% 4%;  /* definindo uma margem interna. */
     border-style: solid; /* Definindo um estilo de borda */
     text-align: start; /* Definindo o alinhamento do texto */
     border-color: rgba(0, 0, 0, 0.445); /* Definindo uma cor de borda */
@@ -73,9 +67,9 @@
 }
 
 .texto-pergunta p{
-    line-height: 27px;
-    margin-bottom: 15px;
-    text-align: justify;
+    line-height: 27px;/*Permite controlar o espaçamento entre as linhas de um texto*/
+    margin-bottom: 15px; /* Definindo uma distancia em relação ao item abaixo. */
+    text-align: justify;/* Definindo o tipo de alinhamento do texto */
 }
 
 .imagem-pergunta{
@@ -95,25 +89,22 @@
 
 .enunciado-pergunta{
     margin: 4% 10% 0; /* Definindo uma margem. */
-    text-align: start; /* Definindo o alinhamento do texto. */
-    text-align: justify;
+    text-align: justify;/* Definindo o tipo de alinhamento do texto */
 }
 
 table, td, th {
-    border: 1.5px solid;
-    text-align: center;
-    padding: 5px;
+    border: 1.5px solid;/* Defindo um tamanho de borda e estilo. */
+    text-align: center;/* Definindo o tipo de alinhamento do texto */
+    padding: 5px;/* definindo uma margem interna. */
   }
   
   table {
-    width: 80%;
-    margin: 0 10%;
-    border-collapse: collapse;
+    width: 80%;/* Definindo a largura */
+    margin: 0 10%;/* Definindo uma margem. */
+    border-collapse: collapse;/* Definndo se as células vão compartilhar uma borda comum ou não. */
   }
 
-.alternativas-pergunta{
-    text-align: left; /* Definindo o alinhamento do texto. */
-}
+.alternativas-pergunta{ text-align: left; /* Definindo o alinhamento do texto. */ }
 
 .imagem-alternativa{
 	width: 100%; /* Definindo a largura. */

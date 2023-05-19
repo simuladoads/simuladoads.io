@@ -1,64 +1,57 @@
 
 .titulo, .sub-titulo {
-    text-align: center;
-    margin-top: 9px;
+    text-align: center;/* Definindo o tipo de alinhamento do texto */
+    margin-top: 9px;/* Definindo uma margem em relação ao item acima. */
 }
 
 hr {
-    margin: 35px;
-    border: 1px #2c5ca8 solid;
+    margin: 35px;/* Definindo uma margem. */
+    border: 1px #2c5ca8 solid;/* Defindo um tamanho de borda, estilo e cor. */
 }
 
-.questao{
-    padding: 5px 100px;
-}
+.questao{ padding: 5px 100px; }/* definindo uma margem interna. */
 
 .texto-apoio {
-    font-size: 25px;
-    margin-top: 10px;
+    font-size: 25px;/* Definindo um tamanho para a fonte*/
+    margin-top: 10px;/* Definindo uma margem em relação ao item acima. */
 }
 
 .texto-apoio + p {
-    text-align: justify;
-    text-indent: 2em;
-    padding: 15px 50px 20px 50px;
-    line-height: 1.5em;
+    text-align: justify;/* Definindo o tipo de alinhamento do texto */
+    text-indent: 2em;/* Definindo um tamanho para o recuo da primeira linha de um bloco de texto*/
+    padding: 15px 50px 20px 50px;/* definindo uma margem interna. */
+    line-height: 1.5em;/*Permite controlar o espaçamento entre as linhas de um texto*/
 }
 
 .num-quest {
-    font-size: 27px;
-    margin-bottom: 10px;
+    font-size: 27px;/* Definindo um tamanho para a fonte*/
+    margin-bottom: 10px;/* Definindo uma distancia em relação ao item abaixo. */
 }
 
-form {
-    margin: 5px 25px;
-}
+form { margin: 5px 25px; }/* Definindo uma margem. */
 
-label{
-    line-height: 3em;
-}
+label{ line-height: 3em; }/*Permite controlar o espaçamento entre as linhas de um texto*/
 
-p, label { font-size: 19px; }
-
-
+p, label { font-size: 19px; }/* Definindo um tamanho para a fonte*/
+ 
 .controle { 
-    display: flex;
-    justify-content: center; 
+    display: flex;/* Definindo como os elementos serão dispostos na página. */
+    justify-content: center; /* Centralizando o conteúdo no meio, em consideração à largura */
 }
 
-.controle a { margin: 10px;}
+.controle a { margin: 10px;}/* Definindo uma margem. */
 
 input {
-    padding: 10px 15px;
-    font-size: 20px;
-    border: 1px #2c5ca8 solid;
-    border-radius: 5px;
-    background-color: #2c5ca8;
-    color: white;
+    padding: 10px 15px;/* definindo uma margem interna. */
+    font-size: 20px;/* Definindo um tamanho para a fonte*/
+    border: 1px #2c5ca8 solid;/* Defindo um tamanho de borda, estilo e cor. */
+    border-radius: 5px;/* definindo o arredontamendo da borda. */
+    background-color: #2c5ca8;/* Definindo uma cor de fundo */
+    color: white;/* Defino a cor do texto*/
     
 }
 
 input:hover {
-    background-color: #6491da;
-    box-shadow: 4px 4px 5px #9b9b9bb8;
+    background-color: #6491da;/* Definindo uma cor de fundo */
+    box-shadow: 4px 4px 5px #9b9b9bb8;/* Coloca um sombra no fundo do elemento */
 }

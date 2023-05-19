@@ -1,14 +1,8 @@
-h2{
-    padding-bottom: 2%; /* Definindo um padding em relação a acima. */
-}
+h2{ padding-bottom: 2%; /* Definindo um padding em relação a acima. */ }
 
-b{
-    font-size: 2rem; /* Definindo o tamanho da fonte. */
-}
+b{ font-size: 2rem; /* Definindo o tamanho da fonte. */ }
 
-a{
-    text-decoration: none; /* Estilo do link. */
-}
+a{ text-decoration: none; /* Estilo do link. */ }
 
 .sobre-o-site{
     font-size: 1.9rem; /* Definindo o tamanho da fonte. */
